@@ -9,37 +9,30 @@
     <title>Can Dekor&Dizayn</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Ana Sayfa</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <div>Menü</div>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active btn btn-light" href="#">ÜRÜNLER</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active btn btn-light" href="#">ÇALIŞMALARIMIZ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active btn btn-light" href="#">HAKKIMIZDA</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active btn btn-light">İLETİŞİM</a>
-          </li>
-        </ul>
-      </div>
+
+    <!-- Navbar başlangıç -->
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 fixed-top">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">ÜRÜNLER</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">ÇALIŞMALARIMIZ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">HAKKIMIZDA</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading4">İLETİŞİM</a>
+        </li>
+      </ul>
     </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+    </div>
+
+    <!-- Navbar bitiş -->
 
     <!-- Carosel başlangıç -->
 
@@ -95,7 +88,7 @@
       <!-- Carosel bitiş -->
 
       <!-- Content başlangıç -->
-      <section class="card text-center">
+      <section class="card text-center" id="scrollspyHeading1">
         <div class="row">
           <div class="card col m-2" style="width: 18rem">
             <div class="card-body">
@@ -173,9 +166,9 @@
       <!-- Content bitiş -->
 
       <!-- Çalışmalarımız başlangıç-->
-
+    <div id="scrollspyHeading2">
       <h1 class="text-center m-4">ÇALIŞMALARIMIZ</h1>
-    <div class="container">
+    <div class="container" >
       <section class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
           <div class="carousel-indicators">
@@ -223,12 +216,13 @@
           </button>
         </div>
       </section>
+    </div>
 
       <!-- Çalışmalarımız bitiş-->
 
       <!-- Hakkımızda başlangıç-->
 
-      <section class="container fluid">
+      <section class="container fluid" id="scrollspyHeading3">
         <div>
           <h3>Vizyonumuz</h3>
           <p>Fuar sektöründeki güvenilir, yenilikçi ve akılcı yaklaşımımızla sizlerin en çok tercih ettiği ve güvendiği firma olmak.</p>
@@ -253,7 +247,7 @@
       
       <!-- İletişim başlangıç-->
       <section>
-        <h1 class="text-center m-4">İLETİŞİM</h1>
+        <h1 class="text-center m-4" id="scrollspyHeading4">İLETİŞİM</h1>
       <div class="row">
         <div class="col m-2">
           asdasdasd
