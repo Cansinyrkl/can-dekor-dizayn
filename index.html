@@ -12,30 +12,35 @@
   <body>
 
     <!-- Navbar başlangıç -->
-
-    <div class="top-bar">
-      <span><ion-icon name="call-outline">11 22 33 44</ion-icon></span>
-      <ul>
-        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a>asd</li>
-        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a>asd</li>
-        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a>asd</li>
-      </ul>
-    </div>
-    <nav>
-      <div class="logo">
-        <a href="#"></a><img src="assets/css/img/logo.png" alt="logo">logo</div>
+    <div class="fixed-top">
+    <header>
+      <div class="logo">Tech Prism</div>
+      <div class="hamburger" >
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
       </div>
-      <div clas="toggle">
-        <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
-      </div>
-      <ul class="menu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="nav-bar">
+        <ul>
+          <li>
+            <a class="active">Ana Sayfa</a>
+          </li>
+          <li>
+            <a href="Urunler">ÜRÜNLER</a>
+          </li>
+          <li>
+            <a href="scrollspyHeading2">ÇALIŞMALARIMIZ</a>
+          </li>
+          <li>
+            <a href="scrollspyHeading4">HAKKIMIZDA</a>
+          </li>
+          <li>
+            <a href="scrollspyHeading5">İLETİŞİM</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
 
     <!-- Navbar bitiş -->
 
@@ -94,7 +99,7 @@
 
       <!-- Content başlangıç -->
 
-      <h1 class="text-center m-3" id="scrollspyHeading1">ÜRÜNLER</h1>
+      <h1 class="text-center m-3" id="Urunler">ÜRÜNLER</h1>
       <section >    
           <div class="accordion " id="accordionExample">
             <div class="accordion-item ">
@@ -404,6 +409,6 @@
   </body>
 
   <script src="assets/js/bootstrap.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js" defer></script>
 
 </html>
