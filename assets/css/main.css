@@ -29,7 +29,7 @@ header {
 }
 .nav-bar ul li a {
   display: block;
-  color: #fefefe;
+  color: white;
   font-size: 20px;
   padding: 10px 15px;
   border-radius: 50px;
@@ -85,7 +85,7 @@ header {
     width: fit-content;
     margin: 80px auto 0 auto;
     text-align: center;
-    transition: 0.5s;
+    transition: 0.3s;
     opacity: 0;
   }
   .nav-bar.active ul {
@@ -93,5 +93,57 @@ header {
   }
   .nav-bar ul li a {
     margin-bottom: 12px;
+  }
+}
+
+.content-ul {
+  list-style: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.content-ul .content-li {
+  float: left;
+  width: 25%;
+  height: 600px;
+  opacity: 0.5;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.content-ul .content-li:hover,
+.content-ul .content-li:first-child ~ .content-li:last-child {
+  width: 50%;
+  opacity: 1;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.content-ul .content-li:hover ~ .content-li:last-child {
+  width: 25%;
+  opacity: 0.5;
+}
+.content-ul .content-li:nth-child(4) {
+  background: url("https://dl.dropbox.com/s/mbho5bqfofk6g99/pic.jpg") top center no-repeat;
+}
+.content-ul .content-li:nth-child(3) {
+  background: url("https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg") top right no-repeat;
+}
+.content-ul .content-li:nth-child(2) {
+  background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
+}
+.content-ul .content-li:nth-child(1) {
+  background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
+}
+
+/** Layout fixes **/
+.credits a {
+  margin-right: calc((100% - 1230px) / 2);
+}
+
+@media (max-width: 1240px) {
+  .credits a {
+    margin-right: 0px;
   }
 }
