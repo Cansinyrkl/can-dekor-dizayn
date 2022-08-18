@@ -7,9 +7,11 @@
   font-family: "Google Sans Regular";
   scroll-behavior: smooth;
 }
+
 body {
   background-color: #fefefe;
 }
+
 header {
   width: 100%;
   height: 100px;
@@ -19,15 +21,19 @@ header {
   justify-content: space-between;
   padding: 0 100px;
 }
+
 .logo {
   width: 100px;
 }
+
 .hamburger {
   display: none;
 }
+
 .nav-bar ul {
   display: flex;
 }
+
 .nav-bar ul li a {
   display: block;
   color: white;
@@ -38,6 +44,7 @@ header {
   margin: 0 5px;
   text-decoration: none;
 }
+
 .nav-bar ul li a:hover {
   color: white;
   background: black;
@@ -48,26 +55,31 @@ header {
   header {
     padding: 0 50px;
   }
+
   .logo {
     width: 75px;
   }
 }
+
 @media only screen and (max-width: 1100px) {
   header {
     padding: 0 30px;
   }
 }
+
 @media only screen and (max-width: 1000px) {
   .hamburger {
     display: block;
     cursor: pointer;
   }
+
   .hamburger .line {
     width: 30px;
     height: 3px;
     background: #fefefe;
     margin: 6px 0;
   }
+
   .nav-bar {
     height: 0px;
     position: absolute;
@@ -79,9 +91,11 @@ header {
     transition: 0.2s;
     overflow: hidden;
   }
+
   .nav-bar.active {
     height: 325px;
   }
+
   .nav-bar ul {
     display: block;
     width: fit-content;
@@ -90,9 +104,11 @@ header {
     transition: 0.3s;
     opacity: 0;
   }
+
   .nav-bar.active ul {
     opacity: 1;
   }
+
   .nav-bar ul li a {
     margin-bottom: 12px;
   }
@@ -103,6 +119,7 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .content-ul .content-li {
   float: left;
   width: 25%;
@@ -113,8 +130,9 @@ header {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
 .content-ul .content-li:hover,
-.content-ul .content-li:first-child ~ .content-li:last-child {
+.content-ul .content-li:first-child~.content-li:last-child {
   width: 50%;
   opacity: 1;
   -moz-transition: all 0.3s ease-in-out;
@@ -122,19 +140,24 @@ header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-.content-ul .content-li:hover ~ .content-li:last-child {
+
+.content-ul .content-li:hover~.content-li:last-child {
   width: 25%;
   opacity: 0.5;
 }
+
 .content-ul .content-li:nth-child(4) {
   background: url("https://dl.dropbox.com/s/mbho5bqfofk6g99/pic.jpg") top center no-repeat;
 }
+
 .content-ul .content-li:nth-child(3) {
   background: url("https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg") top right no-repeat;
 }
+
 .content-ul .content-li:nth-child(2) {
   background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
 }
+
 .content-ul .content-li:nth-child(1) {
   background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
 }
@@ -156,9 +179,9 @@ header {
 }
 
 .ac-container label {
-  height: 30px !important;
+  height: 50px !important;
   line-height: 21px !important;
-  font-size: 12px !important;
+  font-size: 18px !important;
   font-family: "Open Sans", "Arial Narrow", Arial, sans-serif !important;
   padding: 5px 20px;
   position: relative;
@@ -166,7 +189,7 @@ header {
   display: block;
   height: 30px;
   cursor: pointer;
-  color: #777;
+  color: black;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
   line-height: 33px;
   font-size: 19px;
@@ -176,11 +199,16 @@ header {
   background: -o-linear-gradient(top, #fff 1%, #eaeaea 100%);
   background: -ms-linear-gradient(top, #fff 1%, #eaeaea 100%);
   background: linear-gradient(top, #fff 1%, #eaeaea 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff',endColorstr='#eaeaea',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea', GradientType=0);
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 1px 0 0 rgba(255, 255, 255, 0.9) inset, 0 2px 2px rgba(0, 0, 0, 0.1);
   font-size: 12px;
   height: 30px;
   line-height: 20px;
+}
+
+.ac-container-header {
+  font-size: 26px;
+  margin-top: 5px;
 }
 
 .ac-container {
@@ -190,13 +218,14 @@ header {
 }
 
 .ac-container label:hover {
-  background: #fff;
+  background: rgb(80, 80, 80);
+  color: white;
 }
 
-.ac-container input:checked + label,
-.ac-container input:checked + label:hover {
+.ac-container input:checked+label,
+.ac-container input:checked+label:hover {
   background: #f1f2f3;
-  color: #666;
+  color: rgb(80, 80, 80);
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6);
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 0 2px 2px rgba(0, 0, 0, 0.1);
   height: 30px;
@@ -205,7 +234,7 @@ header {
 }
 
 .ac-container label:hover:after,
-.ac-container input:checked + label:hover:after {
+.ac-container input:checked+label:hover:after {
   content: "";
   position: absolute;
   width: 24px;
@@ -215,7 +244,7 @@ header {
   background: transparent url(../images/arrow_down.png) no-repeat center center;
 }
 
-.ac-container input:checked + label:hover:after {
+.ac-container input:checked+label:hover:after {
   background-image: url(../images/arrow_up.png);
 }
 
@@ -226,7 +255,7 @@ header {
 .ac-container article {
   background: rgba(255, 255, 255, 0.5);
   margin-top: -1px;
-  overflow: hidden;
+  overflow-y: scroll;
   height: 0;
   position: relative;
   z-index: 10;
@@ -247,7 +276,7 @@ header {
   font: normal normal 12px "Open Sans";
 }
 
-.ac-container input:checked ~ article {
+.ac-container input:checked~article {
   -webkit-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   -moz-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
   -o-transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
@@ -256,16 +285,16 @@ header {
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
 }
 
-.ac-container input:checked ~ article.ac-small {
-  height: 300px;
+.ac-container input:checked~article.ac-small {
+  height: 385px;
 }
 
-.ac-container input:checked ~ article.ac-medium {
-  height: 180px;
+.ac-container input:checked~article.ac-medium {
+  height: 385px;
 }
 
-.ac-container input:checked ~ article.ac-large {
-  height: 230px;
+.ac-container input:checked~article.ac-large {
+  height: 385px;
 }
 
 .card {
@@ -283,24 +312,30 @@ header {
   display: flex !important;
   flex-wrap: wrap !important;
 }
-.product-container {
-  overflow-y: scroll;
-}
 
-@media screen and (max-width: 576px) {
+
+
+@media screen and (min-width: 576px) {
   .card {
     width: 100%;
     margin: 10px;
   }
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (max-width: 576px) {
   .card {
-    width: 100%;
+    width: 80%;
   }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .card {
-    width: 70%;
+    width: 46.8%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .card {
+    width: 31.7%;
   }
 }
