@@ -311,7 +311,6 @@ header {
 .product {
   display: flex !important;
   flex-wrap: wrap !important;
-  flex-direction: row !important;
 }
 
 
