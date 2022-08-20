@@ -11,10 +11,10 @@
   <title>Can Dekor&Dizayn</title>
 </head>
 
-<body>
+<body onload="onload()">
 
   <!-- Navbar başlangıç -->
-  <div class="fixed-top">
+  <div class="fixed-top navbar" id="navBarContainer" style="background-color: black !important; height: 100px;">
     <header>
       <img class="logo" src="assets/img/logo.png" />
       <div class="hamburger">
@@ -107,14 +107,14 @@
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal2">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal3">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
@@ -262,8 +262,6 @@
   <!-- İletişim bitiş-->
 
 <div id="modalDiv"></div>
-<div id="modalDiv"></div>
-<div id="modalDiv"></div>
 
 </body>
 
@@ -273,12 +271,14 @@
 <script src="node_modules/axios/dist/axios.min.js"></script>
 <script>
 
+  const onload = ()  => { 
   const div = document.getElementById("modalDiv");
- for(let i = 1 ; i<=3; i++){
+   for(let i = 1 ; i<=3; i++){
    axios.get(`productModals/PModal${i}.html`).then((res)=> {
    const data = res.data;
    div.innerHTML += data;
    })}
- 
+  }
+
 </script>
 </html>
