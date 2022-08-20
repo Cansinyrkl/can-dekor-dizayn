@@ -100,7 +100,7 @@
           </label>
           <article class="ac-small">
             <div class="product">
-              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal1" id="PModal1" >
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal1" >
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
@@ -261,6 +261,10 @@
   </div>
   <!-- İletişim bitiş-->
 
+<div id="modalDiv"></div>
+<div id="modalDiv"></div>
+<div id="modalDiv"></div>
+
 </body>
 
 <script src="assets/js/bootstrap.js"></script>
@@ -269,8 +273,12 @@
 <script src="node_modules/axios/dist/axios.min.js"></script>
 <script>
 
-axios.get("productModals/PModal1.html").then((res)=> {
-
-})
+  const div = document.getElementById("modalDiv");
+ for(let i = 1 ; i<=3; i++){
+   axios.get(`productModals/PModal${i}.html`).then((res)=> {
+   const data = res.data;
+   div.innerHTML += data;
+   })}
+ 
 </script>
 </html>
