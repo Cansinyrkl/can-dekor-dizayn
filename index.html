@@ -7,25 +7,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <title>Can Dekor&Dizayn</title>
 </head>
 
 <body onload="onload()">
 
   <!-- Navbar başlangıç -->
-  <div class="fixed-top navbar" id="navBarContainer" style="background-color: black !important; height: 100px;">
-    <header>
-      <img class="logo" src="assets/img/logo.png" />
+  <div class="fixed-top">
+    <header id="navBarContainer">
+      <a href="#"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
       </div>
       <nav class="nav-bar">
-        <ul class="text-light">
+        <ul>
           <li>
-            <a href="#Anasayfa">ANASAYFA</a>
+            <a href="#Anasayfa"></a>
           </li>
           <li>
             <a href="#Urunler">ÜRÜNLER</a>
@@ -90,17 +93,18 @@
     <!-- Carosel bitiş -->
 
     <!-- Content başlangıç -->
+
     <div class="bg" id="product">
-      <h1 class="text-center">ÜRÜNLER</h1>
+      <h1 class="text-center" id="Urunler">ÜRÜNLER</h1>
       <section class="ac-container">
         <div class="product-container">
           <input id="ac-1" name="accordion-1" type="radio" checked="">
           <label for="ac-1" class="text-center">
             <h1 class="ac-container-header">Tahta Stantlarımız</h1>
           </label>
-          <article class="ac-small">
+          <article class="ac-medium">
             <div class="product">
-              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal1" >
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal1">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
@@ -127,25 +131,25 @@
         <div>
           <input id="ac-2" name="accordion-1" type="radio">
           <label for="ac-2" class="text-center">
-            <h1 class="ac-container-header">Cam Stantlarımız</h1>>
+            <h1 class="ac-container-header">Cam Stantlarımız</h1>
           </label>
           <article class="ac-medium">
             <div class="product">
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal4">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal5">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal6">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
@@ -160,23 +164,23 @@
           <label for="ac-3" class="text-center">
             <h1 class="ac-container-header">Maxsima Stantlarımız</h1>
           </label>
-          <article class="ac-large">
+          <article class="ac-medium">
             <div class="product">
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal7">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal8">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
                   <p class="text-center">Architect & Engineer</p>
                 </div>
               </div>
-              <div class="card">
+              <div class="card" data-bs-toggle="modal" data-bs-target="#PModal9">
                 <img src="assets/img/stand.jpg" alt="Avatar" style="width:100%" />
                 <div class="container">
                   <h4 class="text-center"><b>John Doe</b></h4>
@@ -188,15 +192,13 @@
         </div>
       </section>
     </div>
-
-
-
     <!-- Content bitiş -->
 
 
 
     <!-- Çalışmalarımız başlangıç-->
 
+    <div id="Calısmalarımız"></div>
 
     <!-- Çalışmalarımız bitiş-->
 
@@ -229,39 +231,53 @@
         </div>
       </section>
     </div>
+
     <!-- Hakkımızda bitiş-->
 
     <!-- İletişim başlangıç-->
-    <div class="bg" id="Iletısım">
-      <section>
-        <h1 class="text-center m-4">İLETİŞİM</h1>
-        <div class="row">
-          <div class="col m-2">
-            asdasdasd
-          </div>
-          <div class="col m-2">
-            <div class="row">
-              <div class="col-6">
-                <div class="row">
-                  <h6> Ad Soyad : </h6>
-                  <h6>Telefon : </h6>
-                  <h6>E-mail : </h6>
-                  <h6>Adres : </h6>
-                </div>
-              </div>
-              <div class="col-6">
-                <p class="text-right">Deneme</p>
 
-              </div>
+    <div class="footer">
+      <div class="bg" id="Iletısım">
+        <section id="contact">
+          <div class="contact-wrapper">
+
+            <!-- Left contact page -->
+
+            <div class="direct-contact-container">
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bağlar Caddesi
+                  Gültepe Sefaköy İST
+                </span></i></li>
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
+                        href="tel:1-212-555-5555" title="Give me a call">(0212) 425 07 05</a></span></i></li>
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
+                        href="mailto:#" title="Send me an email">ayurekl97@gmail.com</a></span></i></li>
+              </ul>
+
+              <hr>
+
+              <ul class="social-media-list">
+                <li><a href="https://www.instagram.com/can.yrkl" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li><a href="https://www.twitch.tv/" target="_blank" class="contact-icon">
+                    <i class="fa-brands fa-twitter"></i></a>
+                </li>
+              </ul>
             </div>
-          </div>
-        </div>
-    </div>
-    </section>
-  </div>
-  <!-- İletişim bitiş-->
+            <!-- Right contact page -->
 
-<div id="modalDiv"></div>
+          </div>
+      </div>
+
+      </section>
+    </div>
+  </div>
+  </section>
+  </div>
+
+  <!-- İletişim bitiş-->
+  <div id="modalDiv"></div>
 
 </body>
 
@@ -271,14 +287,16 @@
 <script src="node_modules/axios/dist/axios.min.js"></script>
 <script>
 
-  const onload = ()  => { 
-  const div = document.getElementById("modalDiv");
-   for(let i = 1 ; i<=3; i++){
-   axios.get(`productModals/PModal${i}.html`).then((res)=> {
-   const data = res.data;
-   div.innerHTML += data;
-   })}
+  const onload = () => {
+    const div = document.getElementById("modalDiv");
+    for (let i = 1; i <= 9; i++) {
+      axios.get(`productModals/PModal${i}.html`).then((res) => {
+        const data = res.data;
+        div.innerHTML += data;
+      })
+    }
   }
 
 </script>
+
 </html>

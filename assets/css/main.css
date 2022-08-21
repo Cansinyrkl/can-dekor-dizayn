@@ -12,93 +12,64 @@ body {
   background-color: #fefefe;
 }
 
+/** Navbar CSS**/
+
+
 header {
   width: 100%;
   height: 100px;
-  background: rgb(220, 28, 66);
+  background: #11101b;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 100px;
 }
 
+
+
 .logo {
-  width: 100px;
+  width: 90px;
+  margin: 50px;
 }
 
 .hamburger {
   display: none;
 }
 
+.nav-bar ul {
+  display: flex;
+}
 
+.nav-bar ul li a {
+  display: block;
+  color: #fefefe;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+  text-decoration: none;
+}
 
-.hamburger .line {
-  width: 30px;
-  height: 3px;
+.nav-bar ul li a:hover {
+  color: #11101b;
   background: #fefefe;
-  margin: 6px 0;
 }
 
-.content-ul {
-  list-style: none;
-  max-width: 1200px;
-  margin: 0 auto;
+.nav-bar ul li a.active {
+  color: #11101b;
+  background: #fefefe;
 }
 
-.content-ul .content-li {
-  float: left;
-  width: 25%;
-  height: 600px;
-  opacity: 0.5;
-  -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-}
-
-.content-ul .content-li:hover,
-.content-ul .content-li:first-child~.content-li:last-child {
-  width: 50%;
-  opacity: 1;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-
-.content-ul .content-li:hover~.content-li:last-child {
-  width: 25%;
-  opacity: 0.5;
-}
-
-.content-ul .content-li:nth-child(4) {
-  background: url("https://dl.dropbox.com/s/mbho5bqfofk6g99/pic.jpg") top center no-repeat;
-}
-
-.content-ul .content-li:nth-child(3) {
-  background: url("https://dl.dropbox.com/s/kioimintl0v9l4d/pic.jpg") top right no-repeat;
-}
-
-.content-ul .content-li:nth-child(2) {
-  background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
-}
-
-.content-ul .content-li:nth-child(1) {
-  background: url("https://dl.dropbox.com/s/7a60gndncwf81x8/pic.jpg") top center no-repeat;
-}
+/** Navbar CSS end **/
 
 /** Layout fixes **/
 .credits a {
   margin-right: calc((100% - 1230px) / 2);
 }
 
-@media (max-width: 1240px) {
-  .credits a {
-    margin-right: 0px;
-  }
-}
+/** Accordion **/
 
-/*Acco*/
 .ac-container {
   max-width: 66.8%;
 }
@@ -210,17 +181,15 @@ header {
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3);
 }
 
-.ac-container input:checked~article.ac-small {
-  height: 385px;
-}
+
 
 .ac-container input:checked~article.ac-medium {
   height: 385px;
 }
 
-.ac-container input:checked~article.ac-large {
-  height: 385px;
-}
+/** Accordion end **/
+
+/** Card CSS **/
 
 .card {
   margin: 20px;
@@ -233,45 +202,20 @@ header {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
+/** Hamburger CSS end **/
+
+/** Product CSS **/
+
 .product {
   display: flex !important;
   flex-wrap: wrap !important;
 }
 
-
-
-@media screen and (min-width: 576px) {
-  .card {
-    width: 100%;
-    margin: 10px;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .card {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .card {
-    width: 46.8%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .card {
-    width: 31.7%;
-  }
-}
+/** Product CSS end **/
 
 @media only screen and (max-width: 1320px) {
   header {
     padding: 0 50px;
-  }
-
-  .logo {
-    width: 75px;
   }
 }
 
@@ -281,9 +225,264 @@ header {
   }
 }
 
+/** Hamburger CSS **/
+
 @media only screen and (max-width: 1000px) {
   .hamburger {
     display: block;
     cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0%;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 325px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
+
+/** Hamburger CSS end **/
+
+@media (max-width: 1240px) {
+  .credits a {
+    margin-right: 0px;
+  }
+}
+
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.section-header {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  max-width: 840px;
+}
+
+/* Left contact page */
+
+
+
+/* Location, Phone, Email Section */
+.contact-list {
+  list-style-type: none;
+  margin-left: -30px;
+  padding-right: 20px;
+}
+
+.list-item {
+  line-height: 4;
+  color: black;
+}
+
+.contact-text {
+  font: 300 18px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: black;
+}
+
+.place {
+  margin-left: 62px;
+}
+
+.phone {
+  margin-left: 56px;
+}
+
+.gmail {
+  margin-left: 53px;
+}
+
+.contact-text a {
+  color: black;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+.contact-text a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+
+/* Social Media Icons */
+.social-media-list {
+  position: relative;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: white;
+}
+
+.social-media-list li {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgb(27, 27, 27);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+
+.social-media-list li:hover {
+  background-color: #fff;
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;
+  transform: scale(1.12);
+  transition-timing-function: cubic-bezier(0.37, 0.74, 0.15, 1.65);
+}
+
+.social-media-list li:hover a {
+  color: #000;
+}
+
+.copyright {
+  font: 200 14px 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+hr {
+  border-color: rgba(255, 255, 255, .6);
+}
+
+/* Begin Media Queries*/
+@media screen and (max-width: 850px) {
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .direct-contact-container,
+  .form-horizontal {
+    margin: 0 auto;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 300px;
+  }
+
+  .social-media-list li {
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+  }
+
+  .social-media-list li:after {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+}
+
+@media screen and (max-width: 569px) {
+
+  .direct-contact-container,
+  .form-wrapper {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .form-control,
+  textarea {
+
+    margin: 0 auto;
+  }
+
+
+  .name,
+  .email,
+  textarea {
+    width: 280px;
+  }
+
+  .direct-contact-container {
+    margin-top: 60px;
+    max-width: 280px;
+  }
+
+  .social-media-list {
+    left: 0;
+  }
+
+  .social-media-list li {
+    height: 55px;
+    width: 55px;
+    line-height: 55px;
+    font-size: 2rem;
+  }
+
+  .social-media-list li:after {
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+
+}
+
+@media screen and (max-width: 410px) {
+  .send-button {
+    width: 99%;
   }
 }
