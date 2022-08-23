@@ -28,6 +28,9 @@
       <nav class="nav-bar">
         <ul>
           <li>
+            <a href="#upside"></a>
+          </li>
+          <li>
             <a href="#Anasayfa"></a>
           </li>
           <li>
@@ -57,23 +60,25 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="550" role="img" aria-label="Placeholder: First slide"  focusable="false"><rect width="100%" height="100%" fill="#777"></rect></svg>
-    
+          <img src="assets/img/stand.jpg" alt="" width="100%" height="650px">
+
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="550" role="img" aria-label="Placeholder: Second slide"  focusable="false"><rect width="100%" height="100%" fill="#666"></rect></svg>
-    
+          <img src="assets/img/stand.jpg" alt="" width="100%" height="650px">
+
         </div>
         <div class="carousel-item">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="550" role="img" aria-label="Placeholder: Third slide"  focusable="false"><rect width="100%" height="100%" fill="#555"></rect></svg>
-    
+          <img src="assets/img/stand.jpg" alt="" width="100%" height="650px">
+
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
@@ -346,7 +351,7 @@
     </div>
     <!-- Content bitiş -->
 
-     <hr>
+    <hr>
 
     <!-- Çalışmalarımız başlangıç-->
 
@@ -387,6 +392,7 @@
 
     <!-- Hakkımızda bitiş-->
 
+
     <hr>
 
     <!-- Referanslar -->
@@ -410,8 +416,8 @@
             <div class="direct-contact-container">
               <ul class="contact-list">
                 <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bağlar Caddesi
-                  Gültepe Sefaköy İST
-                </span></i></li>
+                      Gültepe Sefaköy İST
+                    </span></i></li>
                 <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
                         href="tel:1-212-555-5555" title="Give me a call">(0212) 425 07 05</a></span></i></li>
                 <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
@@ -428,6 +434,11 @@
               </ul>
             </div>
             <!-- Right contact page -->
+            <div class="direct-contact-container">
+              <ul class="contact-list">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6022.864489994679!2d28.7868301277597!3d40.99391151512522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3935fdf9f6b%3A0xa99dc1845e440ff6!2zR8O8bHRlcGUsIDM0Mjk1IEvDvMOnw7xrw6dla21lY2UvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1661249085678!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </ul>
+            </div>
 
           </div>
       </div>
@@ -441,6 +452,11 @@
   <!-- İletişim bitiş-->
   <div id="modalDiv"></div>
 
+  
+
+  <i id="above" style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; background: rgba(0, 0, 0, 0.966); color: white; border-radius: 30px; position: fixed; right: 34px; bottom: 24px; box-shadow: rgb(0 0 0 / 100%) 0px 4px 10px; z-index: 9999; cursor: pointer; font-weight: 600;"
+  class="fa-solid fa-circle-arrow-up"></i>
+
 </body>
 
 <script src="assets/js/bootstrap.js"></script>
@@ -449,15 +465,7 @@
 <script src="node_modules/axios/dist/axios.min.js"></script>
 <script>
 
-  const onload = () => {
-    const div = document.getElementById("modalDiv");
-    for (let i = 1; i <= 9; i++) {
-      axios.get(`productModals/PModal${i}.html`).then((res) => {
-        const data = res.data;
-        div.innerHTML += data;
-      })
-    }
-  }
+
 
 </script>
 

@@ -182,7 +182,7 @@ header {
 }
 
 .ac-container input:checked~article.ac-medium {
-  height: 385px;
+  height: 875px;
 }
 
 /** Accordion end **/
@@ -210,75 +210,6 @@ header {
 }
 
 /** Product CSS end **/
-
-@media only screen and (max-width: 1320px) {
-  header {
-    padding: 0 50px;
-  }
-}
-
-@media only screen and (max-width: 1100px) {
-  header {
-    padding: 0 30px;
-  }
-}
-
-/** Hamburger CSS **/
-
-@media only screen and (max-width: 1000px) {
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger .line {
-    width: 30px;
-    height: 3px;
-    background: #fefefe;
-    margin: 6px 0;
-  }
-
-  .nav-bar {
-    height: 0px;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    right: 0%;
-    width: 100vw;
-    background: #11101b;
-    transition: 0.2s;
-    overflow: hidden;
-  }
-
-  .nav-bar.active {
-    height: 325px;
-  }
-
-  .nav-bar ul {
-    display: block;
-    width: fit-content;
-    margin: 80px auto 0 auto;
-    text-align: center;
-    transition: 0.5s;
-    opacity: 0;
-  }
-
-  .nav-bar.active ul {
-    opacity: 1;
-  }
-
-  .nav-bar ul li a {
-    margin-bottom: 12px;
-  }
-}
-
-/** Hamburger CSS end **/
-
-@media (max-width: 1240px) {
-  .credits a {
-    margin-right: 0px;
-  }
-}
 
 #contact {
   width: 100%;
@@ -312,16 +243,17 @@ header {
 .contact-list {
   list-style-type: none;
   margin-left: -30px;
-  padding-right: 20px;
+  padding-right: 100px;
+  height: 70%;
 }
 
 .list-item {
-  line-height: 4;
+  line-height: 4.3;
   color: black;
 }
 
 .contact-text {
-  font: 300 18px 'Lato', sans-serif;
+  font: 300 20px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: black;
 }
@@ -445,14 +377,6 @@ hr {
 }
 
 
-/* increase header size after 600px */
-@media all and (min-width: 600px) {
-  .blockquote h1 {
-    font-size: 24px;
-    line-height: 1.2;
-  }
-
-}
 
 /* Blockquote subheader */
 .blockquote h4 {
@@ -466,6 +390,15 @@ hr {
   z-index: 1;
   margin-left: 150px;
   padding-left: 12px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
 }
 
 /* Begin Media Queries*/
@@ -546,5 +479,70 @@ hr {
 @media screen and (max-width: 410px) {
   .send-button {
     width: 99%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #fefefe;
+    margin: 6px 0;
+  }
+
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0%;
+    width: 100vw;
+    background: #11101b;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 325px;
+  }
+
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a {
+    margin-bottom: 12px;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .credits a {
+    margin-right: 0px;
   }
 }
