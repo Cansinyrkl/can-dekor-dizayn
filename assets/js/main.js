@@ -39,7 +39,7 @@ addListenerMulti(window, 'scroll resize', function () {
 
 const onload = () => {
   const div = document.getElementById("modalDiv");
-  for (let i = 1; i <= 9; i++) {
+  for (let i = 1; i <= 27; i++) {
     axios.get(`productModals/PModal${i}.html`).then((res) => {
       const data = res.data;
       div.innerHTML += data;

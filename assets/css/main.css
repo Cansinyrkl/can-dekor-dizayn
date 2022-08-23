@@ -52,13 +52,15 @@ header {
 }
 
 .nav-bar ul li a:hover {
-  color: #11101b;
-  background: #fefefe;
+  background: rgb(29, 26, 26);
+  background: linear-gradient(0deg, rgba(29, 26, 26, 1) 0%, rgba(215, 26, 26, 1) 100%);
+  color: rgb(255, 187, 187);
+  transition: 0.5s;
 }
 
 .nav-bar ul li a.active {
-  color: #11101b;
-  background: #fefefe;
+  background: rgb(29, 26, 26);
+  background: linear-gradient(0deg, rgba(29, 26, 26, 1) 0%, rgba(215, 26, 26, 1) 100%);
 }
 
 /** Navbar CSS end **/
@@ -98,7 +100,6 @@ header {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eaeaea', GradientType=0);
   box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.3), 1px 0 0 rgba(255, 255, 255, 0.9) inset, 0 2px 2px rgba(0, 0, 0, 0.1);
   font-size: 12px;
-  height: 30px;
   line-height: 20px;
 }
 
@@ -498,17 +499,18 @@ hr {
   .nav-bar {
     height: 0px;
     position: absolute;
-    top: 80px;
+    top: 82px;
     left: 0;
     right: 0%;
     width: 100vw;
-    background: #11101b;
-    transition: 0.2s;
+    background: rgb(255, 65, 65);
+    background: linear-gradient(0deg, rgba(255, 65, 65, 1) 0%, rgba(66, 47, 47, 1) 100%);
+    transition: 0.3s;
     overflow: hidden;
   }
 
   .nav-bar.active {
-    height: 325px;
+    height: 400px;
   }
 
   .nav-bar ul {
@@ -544,5 +546,61 @@ hr {
 @media (max-width: 1240px) {
   .credits a {
     margin-right: 0px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    width: 44%;
+
+  }
+}
+
+@media (max-width: 995px) {
+  .card {
+    width: 43.4%;
+
+  }
+}
+
+@media (max-width: 853px) {
+  .card {
+    width: 42.5%;
+
+  }
+}
+
+@media (max-width: 850px) {
+  .card {
+    width: 24%;
+
+  }
+}
+
+@media (max-width: 640px) {
+  .card {
+    width: 23%;
+
+  }
+}
+
+@media (max-width: 556px) {
+  .card {
+    width: 39%;
+
+  }
+}
+
+@media (max-width: 450px) {
+  .card {
+    width: 19%;
+
+  }
+}
+
+@media (max-width: 417px) {
+  .card {
+    width: 18%;
+
   }
 }
