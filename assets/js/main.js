@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const navBarContainer = document.querySelector("#navBarContainer");
 const above = document.querySelector("#above");
+const productDiv = document.getElementById("#productDiv")
 
 hamburger.onclick = function () {
   navBar = document.querySelector(".nav-bar");
@@ -48,3 +49,34 @@ const onload = () => {
 }
 
 
+const products = [
+  {
+    id: 1,
+    name: "Delux Tahta",
+    description: "açıklama",
+    databsTarget: "#PModal1",
+    imgSrc: "./assets/img/product img/ahşapS1.jpeg",
+    imgAlt: "aaa",
+  },
+  {
+    id: 2,
+    name: "Delux Tahta",
+    description: "açıklama",
+    databsTarget: "#PModal2",
+    imgSrc: "./assets/img/product img/ahşapS2.jpeg",
+    imgAlt: "aaa",
+  },
+  {
+    id: 3,
+    name: "Delux Tahta",
+    description: "açıklama",
+    databsTarget: "#PModal3",
+    imgSrc: "./assets/img/product img/ahşapS3.jpeg",
+    imgAlt: "Resim",
+  },
+]
+
+
+const productList = (productL) => `${productL.id} ${productL.name} ${productL.description} ${productL.databsTarget} ${productL.imgSrc} ${productL.imgAlt}`;
+
+document.getElementById("productDiv").innerHTML = productList;
