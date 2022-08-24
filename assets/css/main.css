@@ -73,7 +73,7 @@ header {
 /** Accordion **/
 
 .ac-container {
-  max-width: 100%;
+  max-width: 68%;
 }
 
 .ac-container label {
@@ -208,6 +208,7 @@ header {
 .product {
   display: flex !important;
   flex-wrap: wrap !important;
+
 }
 
 /** Product CSS end **/
@@ -236,16 +237,13 @@ header {
   max-width: 840px;
 }
 
-/* Left contact page */
-
 
 
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
-  margin-left: -30px;
-  padding-right: 100px;
-  height: 70%;
+  padding-right: 10px;
+  height: 90%;
 }
 
 .list-item {
@@ -524,6 +522,7 @@ hr {
 
   .nav-bar.active ul {
     opacity: 1;
+
   }
 
   .nav-bar ul li a {
@@ -550,9 +549,31 @@ hr {
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1920px) {
   .card {
-    width: 46.4%;
+    width: 46%;
+
+  }
+}
+
+@media (max-width: 1399px) {
+  .ac-container {
+    max-width: 80%;
+  }
+
+  .card {
+    width: 46%;
+
+  }
+}
+
+@media (max-width: 1249px) {
+  .ac-container {
+    max-width: 89%;
+  }
+
+  .card {
+    width: 46%;
 
   }
 }
@@ -566,7 +587,7 @@ hr {
 
 @media (max-width: 1100px) {
   .card {
-    width: 45.7%;
+    width: 45%;
 
   }
 }
@@ -588,14 +609,14 @@ hr {
 
 @media (max-width: 850px) {
   .card {
-    width: 24%;
+    width: 26%;
 
   }
 }
 
 @media (max-width: 640px) {
   .card {
-    width: 23%;
+    width: 43%;
 
   }
 }
