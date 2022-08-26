@@ -291,9 +291,9 @@ const products = [
 products.map((product) => {
   productDiv.innerHTML +=
     `
-    <ul class="cards">
-        <div>
-          <a href="" class="card" data-bs-target="${product.databsTarget}">
+    
+        <div data-bs-target="${product.databsTarget}">
+          <a href="" class="card" >
             <img src="${product.imgSrc}" class="cardimage" alt="${product.imgAlt}" />
             <div class="cardoverlay">
               <div class="card__header">
@@ -306,7 +306,7 @@ products.map((product) => {
             </div >
           </a >
         </div >
-    </ul>
+   
     `
 })
 
