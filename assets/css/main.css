@@ -447,3 +447,26 @@ Blockquote header .blockquote h1 {
   color: #04bcff;
   font-size: 18px;
 }
+
+#above {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.966);
+  color: white;
+  border-radius: 50%;
+  position: fixed;
+  right: 34px;
+  bottom: 24px;
+  box-shadow: rgb(0 0 0 / 100%) 0px 4px 10px;
+  z-index: 9999;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color .3s;
+}
+
+#above:hover {
+  color: red;
+}
