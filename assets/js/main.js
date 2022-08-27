@@ -291,22 +291,21 @@ const products = [
 products.map((product) => {
   productDiv.innerHTML +=
     `
-    
-        <div data-bs-target="${product.databsTarget}">
-          <a href="" class="card" >
-            <img src="${product.imgSrc}" class="cardimage" alt="${product.imgAlt}" />
-            <div class="cardoverlay">
-              <div class="card__header">
-                <svg class="card__arc">
-                  <path />
-                </svg>
-                <img class="cardthumb" src="${product.imgSrc}" alt="${product.imgAlt}" />
-                <h3 h3 class="cardheader" >${product.name}</h3 >
-              </div >
-            </div >
-          </a >
-        </div >
-   
+    <div class="a-box"  data-bs-target="${product.databsTarget}" >
+    <div class="img-container">
+        <div class="img-inner">
+            <div class="inner-skew">
+                <img
+                    src="${product.imgSrc}"> alt="${product.imgAlt}"
+            </div>
+        </div>
+    </div>
+    <div class="text-container">
+        <h3>${product.name}</h3>
+        <div>
+            ${product.description}
+        </div>
+    </div>
     `
 })
 
