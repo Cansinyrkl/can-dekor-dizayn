@@ -17,9 +17,9 @@
 <body onload="onload()">
 
   <!-- Navbar başlangıç -->
-  <div class="fixed-top">
+  <div class="fixed-top" id="fixed-top">
     <header id="navBarContainer">
-      <a href="#"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
+      <a href="#Anasayfa"><img src="assets/img/logo.png" alt="logo" class="logo" /></a>
       <div class="hamburger">
         <div class="line"></div>
         <div class="line"></div>
@@ -28,19 +28,17 @@
       <nav class="nav-bar">
         <ul>
           <li>
-            <a href="#Anasayfa"></a>
-          </li>
-          <li>
-            <a href="#Urunler">ÜRÜNLER</a>
-          </li>
-          <li>
             <a href="#Calısmalarımız">ÇALIŞMALARIMIZ</a>
           </li>
           <li>
             <a href="#Hakkımızda">HAKKIMIZDA</a>
           </li>
           <li>
-            <a href="#Iletısım">İLETİŞİM</a>
+            <a href="#Referanslarımız">REFERANSLAR</a>
+          </li>
+          <li>
+            <a href="tel:0532 795 88 37">İLETİŞİM</a>
+
           </li>
         </ul>
       </nav>
@@ -49,7 +47,6 @@
 
   <!-- Navbar bitiş -->
 
-  <hr>
 
   <!-- Carosel başlangıç -->
 
@@ -78,28 +75,29 @@
 
   <!-- Carosel bitiş -->
 
-  <hr>
+  <hr style="margin: 125px 0;">
 
   <!-- Content başlangıç -->
   <div id="ürünler">
-    <h1 class="text-center fst-italic">Ürünler</h1>
+    <h1 class="text-center fst-italic" id="Calısmalarımız">Özel Ahşap Stand</h1>
 
 
     <div class="container">
       <div id="productDiv">
-        
-      </div>
-      <button type="button" style="margin-left: 45%" onclick="btnGoster()" id="btnShow" class="btn btn-secondary">
-        Daha fazla göster
-      </button>
-      <button type="button" style="margin-left: 45%; display: none" onclick="btnGizle()" id="btnHide"
-      class="btn btn-secondary">
-        Gizle
-      </button>
-    </div>
-  </div>
 
- 
+      </div>
+      <div style="width:100%; display: flex; justify-content: center; align-items: center;">
+        <button type="button" onclick="btnGoster()" id="btnShow" class="btn btn-secondary">
+          Daha fazla göster
+        </button>
+
+        <button type="button" style=" display: none" onclick="btnGizle()" id="btnHide" class="btn btn-secondary">
+          Gizle
+        </button>
+      </div>
+    </div>
+
+
 
 
 
@@ -109,7 +107,7 @@
   </div>
   <!-- Content bitiş -->
 
-  <hr>
+  <hr style="margin: 125px 0;">
 
   <!-- Çalışmalarımız başlangıç-->
 
@@ -123,10 +121,11 @@
   <div class="container" id="Hakkımızda">
     <h2 class="text-center">HAKKIMIZDA</h2>
     <div class="bg">
-      <section class="container fluid">
+      <section class="container-fluid">
         <div>
           <h3>Vizyonumuz</h3>
-          <p>Fuar sektöründeki güvenilir, yenilikçi ve akılcı yaklaşımımızla sizlerin en çok tercih ettiği ve güvendiği
+          <p>Fuar sektöründeki güvenilir, yenilikçi ve akılcı yaklaşımımızla sizlerin en çok tercih ettiği ve
+            güvendiği
             firma olmak.</p>
         </div>
         <div>
@@ -134,17 +133,20 @@
           <h6>Neden Varız ?</h6>
           <p>Ülkemizde artık diğer büyük ekonomilerde olduğu gibi ticari faaliyetlerinde profesyonel ekipleri tercih
             etmektedirler.
-            Profesyonel, güler yüzlü ve anlayışlı ekip arkadaşlarımızla sizlerin fuarlardaki işinizi kolaylaştırmak en
+            Profesyonel, güler yüzlü ve anlayışlı ekip arkadaşlarımızla sizlerin fuarlardaki işinizi kolaylaştırmak
+            en
             önemli görev ve
             hizmetimizdir.
           </p>
           <h6>Ne İşe Yararız ?</h6>
           <p>Biz bu sektörde ucuz ve kalitesiz ürünleri sizlere sunan değil, ihtiyacınızı karşılayabilecek
-            en iyi kalitedeki ürünleri sunan firmayız. Kurulum sürecinde sizin üstünüzden ekstra malzeme yükünü almaya
+            en iyi kalitedeki ürünleri sunan firmayız. Kurulum sürecinde sizin üstünüzden ekstra malzeme yükünü
+            almaya
             yararız.
           </p>
           <h6>Kime Hitap Ederiz ?</h6>
-          <p>Firmamız Fuarlara Katılan Firmalara, Fuar Sektörüne Hitap Eden Şirketlere, Ajanslara, Mimarlık Ofislerine,
+          <p>Firmamız Fuarlara Katılan Firmalara, Fuar Sektörüne Hitap Eden Şirketlere, Ajanslara, Mimarlık
+            Ofislerine,
             Kısacası Sektördeki Bütün Firmalar İçin Kusursuz Bir Çözüm Ortağıdır.</p>
         </div>
       </section>
@@ -154,17 +156,19 @@
   <!-- Hakkımızda bitiş-->
 
 
-  <hr>
+  <hr style="margin: 125px 0;">
 
   <!-- Referanslar -->
 
 
 
 
-
   <!-- Referanslar bitiş -->
 
+  <hr style="margin: 125px 0;">
+
   <!-- İletişim başlangıç-->
+
   <div class="container" id="Iletısım">
     <h2 class="text-center">İLETİŞİM</h2>
     <div class="footer">
@@ -175,14 +179,16 @@
             <div class="col-lg-6">
               <div class="direct-contact-container">
                 <ul class="contact-list">
-                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Bağlar
-                        Caddesi
-                        Gültepe Sefaköy İST
+                  <li class="list-item"><i class=" fa fa-map-marker fa-1x"><span class="contact-text place"
+                        style="font-size: 1rem; font-family: Google Sans Regular">Kartaltepe Mahallesi şadırvan sok No
+                        5/b Küçükçekmece sefaköy
                       </span></i></li>
-                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a
-                          href="tel:1-212-555-5555" title="Give me a call">(0212) 425 07 05</a></span></i></li>
-                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a
-                          href="mailto:#" title="Send me an email">ayurekl97@gmail.com</a></span></i></li>
+                  <li class="list-item"><i class="fa fa-phone fa"><span class="contact-text phone "><a
+                          href="tel:0532 795 88 37" title="Give me a call" style="font-size: 16px;">0532 795 88
+                          37</a></span></i></li>
+                  <li class="list-item"><i class="fa fa-envelope fa"><span class="contact-text gmail"><a href="mailto:#"
+                          title="Send me an email" style="font-size: 16px;">candizayn@windowslive.com</a></span></i>
+                  </li>
                 </ul>
                 <hr>
                 <ul class="social-media-list">
@@ -197,8 +203,8 @@
             </div>
             <div class="col-lg-6">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6022.864489994679!2d28.7868301277597!3d40.99391151512522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caa3935fdf9f6b%3A0xa99dc1845e440ff6!2zR8O8bHRlcGUsIDM0Mjk1IEvDvMOnw7xrw6dla21lY2UvxLBzdGFuYnVs!5e0!3m2!1str!2str!4v1661249085678!5m2!1str!2str"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d895.1978166096704!2d28.803666311619406!3d41.00174167978902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x49e3a876c8028351!2zNDHCsDAwJzA2LjAiTiAyOMKwNDgnMTMuNCJF!5e0!3m2!1str!2str!4v1661785631825!5m2!1str!2str"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
@@ -213,8 +219,7 @@
   <div id="modalDiv"></div>
 
 
-
-  <i id="above" class="fa-solid fa-chevron-up fa-2x"></i>
+  <a id="above" href="#Anasayfa"><i id="above" class="fa-solid fa-chevron-up fa-2x"></i></a>
 
 </body>
 
