@@ -26,7 +26,7 @@
         <div class="line"></div>
       </div>
       <nav class="nav-bar">
-        <ul>
+        <ul id="menuList">
           <li>
             <a href="#Calısmalarımız">ÇALIŞMALARIMIZ</a>
           </li>
@@ -37,7 +37,7 @@
             <a href="#Referanslarımız">REFERANSLAR</a>
           </li>
           <li>
-            <a href="tel:0532 795 88 37">İLETİŞİM</a>
+            <a href="#Iletısım">İLETİŞİM</a>
 
           </li>
         </ul>
@@ -75,39 +75,46 @@
 
   <!-- Carosel bitiş -->
 
-  <hr style="margin: 125px 0;">
+  <hr style="margin: 125px 0;" id="Calısmalarımız">
 
   <!-- Content başlangıç -->
-  <div id="ürünler">
-    <h1 class="text-center fst-italic" id="Calısmalarımız">Özel Ahşap Stand</h1>
+  <div>
+    <h1 class="text-center fst-italic">Özel Ahşap Stand</h1>
 
 
     <div class="container">
       <div id="productDiv">
-
       </div>
       <div style="width:100%; display: flex; justify-content: center; align-items: center;">
         <button type="button" onclick="btnGoster()" id="btnShow" class="btn btn-secondary">
           Daha fazla göster
         </button>
-
         <button type="button" style=" display: none" onclick="btnGizle()" id="btnHide" class="btn btn-secondary">
+          Gizle
+        </button>
+      </div>
+      <div id="productDiv1">
+
+        <hr style="margin: 100px 0;">
+
+        <h1 class="text-center fst-italic">Maxsima Stand</h1>
+
+      </div>
+      <div style="width:100%; display: flex; justify-content: center; align-items: center;">
+        <button type="button" onclick="btnGoster1()" id="btnShow1" class="btn btn-secondary">
+          Daha fazla göster
+        </button>
+        <button type="button" style=" display: none" onclick="btnGizle1()" id="btnHide1" class="btn btn-secondary">
           Gizle
         </button>
       </div>
     </div>
 
 
-
-
-
-
-
-
   </div>
   <!-- Content bitiş -->
 
-  <hr style="margin: 125px 0;">
+  <hr style="margin: 125px 0;" id="Hakkımızda">
 
   <!-- Çalışmalarımız başlangıç-->
 
@@ -118,7 +125,7 @@
   <!-- Çalışmalarımız bitiş-->
 
   <!-- Hakkımızda başlangıç-->
-  <div class="container" id="Hakkımızda">
+  <div class="container">
     <h2 class="text-center">HAKKIMIZDA</h2>
     <div class="bg">
       <section class="container-fluid">
@@ -165,11 +172,11 @@
 
   <!-- Referanslar bitiş -->
 
-  <hr style="margin: 125px 0;">
+  <hr style="margin: 125px 0;" id="Iletısım">
 
   <!-- İletişim başlangıç-->
 
-  <div class="container" id="Iletısım">
+  <div class="container">
     <h2 class="text-center">İLETİŞİM</h2>
     <div class="footer">
       <div class="bg">

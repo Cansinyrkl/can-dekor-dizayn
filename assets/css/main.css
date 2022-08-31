@@ -19,8 +19,8 @@ body {
 header {
   width: 100%;
   height: 100px;
-  background: rgb(29, 26, 26);
-  background: linear-gradient(0deg, rgba(29, 26, 26, 1) 0%, rgba(215, 26, 26, 1) 100%);
+  background: rgb(255, 0, 0);
+  background: linear-gradient(180deg, rgba(255, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,8 +59,8 @@ header {
 }
 
 .nav-bar ul li a.active {
-  background: rgb(29, 26, 26);
-  background: linear-gradient(0deg, rgba(29, 26, 26, 1) 0%, rgba(215, 26, 26, 1) 100%);
+  background: rgb(215, 26, 26);
+  background: linear-gradient(180deg, rgba(215, 26, 26, 1) 0%, rgba(29, 26, 26, 1) 100%);
 }
 
 /** Navbar CSS end **/
@@ -430,14 +430,15 @@ Blockquote header .blockquote h1 {
     left: 0;
     right: 0%;
     width: 100vw;
-    background: rgb(255, 65, 65);
-    background: linear-gradient(0deg, rgba(255, 65, 65, 1) 0%, rgba(66, 47, 47, 1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 100%);
     transition: 0.3s;
     overflow: hidden;
   }
 
   .nav-bar.active {
-    height: 400px;
+    margin-top: px;
+    height: 350px;
   }
 
   .nav-bar ul {
@@ -490,11 +491,17 @@ Blockquote header .blockquote h1 {
     width: 49%;
   }
 
+
 }
 
 @media only screen and (max-width: 575px) {
   .a-box {
     width: 49%;
+  }
+
+  .nav-bar.active {
+    height: 350px;
+    width: 100%;
   }
 }
 
