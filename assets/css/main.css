@@ -268,6 +268,12 @@ Blockquote header .blockquote h1 {
   display: inline-block;
 }
 
+.img-container:hover {
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .img-container img {
   transform: skew(0deg, -13deg);
   height: 250px;
