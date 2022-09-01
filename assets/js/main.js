@@ -1,30 +1,30 @@
 const hamburger = document.querySelector(".hamburger");
 const navBarContainer = document.querySelector("#navBarContainer");
 const above = document.querySelector("#above");
-const productDiv = document.getElementById("productDiv");
-const productDiv1 = document.getElementById("productDiv1");
-const btnShow = document.getElementById("btnShow");
-const btnHide = document.getElementById("btnHide");
-const btnShow1 = document.getElementById("btnShow1");
-const btnHide1 = document.getElementById("btnHide1");
+const woodStand = document.getElementById("woodStand");
+const maxsimaStand = document.getElementById("maxsimaStand");
+const woodBtnGoster = document.getElementById("woodBtnGoster");
+const woodBtnGizle = document.getElementById("woodBtnGizle");
+const maxsimaBtnGoster = document.getElementById("maxsimaBtnGoster");
+const maxsimaBtnGizle = document.getElementById("maxsimaBtnGizle");
 navBar = document.querySelector(".nav-bar");
 
 const menuList = document.getElementById("menuList");
-const menuLinkCalismalarimiz = menuList.children[0];
-const menuLinkHakkımızda = menuList.children[1];
-const menuLinkReferanslar = menuList.children[2];
-const menuLinkIletisim = menuList.children[3];
+const menuLinkTrials = menuList.children[0];
+const menuLinkAboutUs = menuList.children[1];
+const menuLinkReference = menuList.children[2];
+const menuLinkContact = menuList.children[3];
 
-menuLinkCalismalarimiz.onclick = () => {
+menuLinkTrials.onclick = () => {
   navBar.classList.toggle("active");
 }
-menuLinkHakkımızda.onclick = () => {
+menuLinkAboutUs.onclick = () => {
   navBar.classList.toggle("active");
 }
-menuLinkReferanslar.onclick = () => {
+menuLinkReference.onclick = () => {
   navBar.classList.toggle("active");
 }
-menuLinkIletisim.onclick = () => {
+menuLinkContact.onclick = () => {
   navBar.classList.toggle("active");
 }
 hamburger.onclick = function () {
@@ -64,26 +64,26 @@ addListenerMulti(window, "scroll resize", function () {
 
 
 
-const PModal = () => {
+const PAhsapModals = () => {
   const div = document.getElementById("modalDiv");
   for (let i = 1; i <= 26; i++) {
-    axios.get(`productModals/PModal${i}.html`).then((res) => {
+    axios.get(`productAhsapModals/PModal${i}.html`).then((res) => {
       const data = res.data;
       div.innerHTML += data;
     });
   }
 };
-const PModal1 = () => {
+const PMaxsimaModals = () => {
   const div1 = document.getElementById("modalDiv1");
   for (let i = 1; i <= 26; i++) {
-    axios.get(`productModals1/PModal${i}.html`).then((res) => {
+    axios.get(`productMaxsimaModals/PModal${i}.html`).then((res) => {
       const data = res.data;
       div1.innerHTML += data;
     });
   }
 };
 
-const products = [
+const WoodModals = [
   {
     id: 1,
     name: "Delux Tahta",
@@ -319,7 +319,7 @@ const products = [
     imgStyle: "",
   },
 ];
-const products1 = [
+const MaxsimaModals = [
   {
     id: 1,
     name: "Delux Tahta",
@@ -556,201 +556,201 @@ const products1 = [
   },
 ];
 
-const kesilen1 = products.slice(0, 4);
-const kesilen2 = products.slice(5, 15);
-const kesilen3 = products.slice(15);
-const kesilen4 = products1.slice(0, 4);
-const kesilen5 = products1.slice(5, 15);
-const kesilen6 = products1.slice(15);
+const WoodModalsList1 = WoodModals.slice(0, 4);
+const WoodModalsList2 = WoodModals.slice(5, 15);
+const WoodModalsList3 = WoodModals.slice(15);
+const MaxsimaModalsList1 = MaxsimaModals.slice(0, 4);
+const MaxsimaModalsList2 = MaxsimaModals.slice(5, 15);
+const MaxsimaModalsList3 = MaxsimaModals.slice(15);
 let count = 0;
 
-kesilen1.map((kesilen1) => {
-  productDiv.innerHTML += `
-    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen1.databsTarget}">
+WoodModalsList1.map((WoodModalsList1) => {
+  woodStand.innerHTML += `
+    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${WoodModalsList1.databsTarget}">
     <div class="img-container">
         <div class="img-inner">
             <div class="inner-skew">
                 <img
-                    src="${kesilen1.imgSrc}"> alt="${kesilen1.imgAlt}"
+                    src="${WoodModalsList1.imgSrc}"> alt="${WoodModalsList1.imgAlt}"
             </div>
         </div>
     </div>
     <div class="text-container">
-        <h3>${kesilen1.name}</h3>
+        <h3>${WoodModalsList1.name}</h3>
         <div>
-            ${kesilen1.description}
+            ${WoodModalsList1.description}
         </div>
     </div>
     `;
 });
 
 
-const btnGoster = () => {
+const woodStandBtnGoster = () => {
   count++;
   if (count === 1) {
-    kesilen2.map((kesilen2) => {
-      productDiv.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen2.databsTarget}">
+    WoodModalsList2.map((WoodModalsList2) => {
+      woodStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${WoodModalsList2.databsTarget}">
       <div class="img-container">
           <div class="img-inner">
               <div class="inner-skew">
                   <img
-                      src="${kesilen2.imgSrc}"> alt="${kesilen2.imgAlt}"
+                      src="${WoodModalsList2.imgSrc}"> alt="${WoodModalsList2.imgAlt}"
               </div>
           </div>
       </div>
       <div class="text-container">
-          <h3>${kesilen2.name}</h3>
+          <h3>${WoodModalsList2.name}</h3>
           <div>
-              ${kesilen2.description}
+              ${WoodModalsList2.description}
           </div>
       </div>
       `;
     });
   } else if (count === 2) {
-    kesilen3.map((kesilen3) => {
-      productDiv.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen3.databsTarget}">
+    WoodModalsList3.map((WoodModalsList3) => {
+      woodStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${WoodModalsList3.databsTarget}">
       <div class="img-container">
           <div class="img-inner">
               <div class="inner-skew">
                   <img
-                      src="${kesilen3.imgSrc}"> alt="${kesilen3.imgAlt}"
+                      src="${WoodModalsList3.imgSrc}"> alt="${WoodModalsList3.imgAlt}"
               </div>
           </div>
       </div>
       <div class="text-container">
-          <h3>${kesilen3.name}</h3>
+          <h3>${WoodModalsList3.name}</h3>
           <div>
-              ${kesilen3.description}
+              ${WoodModalsList3.description}
           </div>
       </div>
       `;
     });
     count = 0;
-    btnShow.style.display = "none";
-    btnHide.style.display = "block";
+    woodBtnGoster.style.display = "none";
+    woodBtnGizle.style.display = "block";
   }
 };
 
-const btnGizle = () => {
-  productDiv.innerHTML = "";
+const woodStandBtnGizle = () => {
+  woodStand.innerHTML = "";
 
-  kesilen1.map((kesilen1) => {
-    productDiv.innerHTML += `
-    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen1.databsTarget}">
+  WoodModalsList1.map((WoodModalsList1) => {
+    woodStand.innerHTML += `
+    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${WoodModalsList1.databsTarget}">
     <div class="img-container">
         <div class="img-inner">
             <div class="inner-skew">
                 <img
-                    src="${kesilen1.imgSrc}"> alt="${kesilen1.imgAlt}"
+                    src="${WoodModalsList1.imgSrc}"> alt="${WoodModalsList1.imgAlt}"
             </div>
         </div>
     </div>
     <div class="text-container">
-        <h3>${kesilen1.name}</h3>
+        <h3>${WoodModalsList1.name}</h3>
         <div>
-            ${kesilen1.description}
+            ${WoodModalsList1.description}
         </div>
     </div>
     `;
   });
-  btnShow.style.display = "block";
-  btnHide.style.display = "none";
+  woodBtnGoster.style.display = "block";
+  woodBtnGizle.style.display = "none";
 };
 
 
-kesilen4.map((kesilen4) => {
-  productDiv1.innerHTML += `
-    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen4.databsTarget}">
+MaxsimaModalsList1.map((MaxsimaModalsList1) => {
+  maxsimaStand.innerHTML += `
+    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList1.databsTarget}">
     <div class="img-container">
         <div class="img-inner">
             <div class="inner-skew">
                 <img
-                    src="${kesilen4.imgSrc}"> alt="${kesilen4.imgAlt}"
+                    src="${MaxsimaModalsList1.imgSrc}"> alt="${MaxsimaModalsList1.imgAlt}"
             </div>
         </div>
     </div>
     <div class="text-container">
-        <h3>${kesilen4.name}</h3>
+        <h3>${MaxsimaModalsList1.name}</h3>
         <div>
-            ${kesilen4.description}
+            ${MaxsimaModalsList1.description}
         </div>
     </div>
     `;
 });
 
 
-const btnGoster1 = () => {
+const maxsimaStandBtnGoster = () => {
   count++;
   if (count === 1) {
-    kesilen5.map((kesilen5) => {
-      productDiv1.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen5.databsTarget}">
+    MaxsimaModalsList2.map((MaxsimaModalsList2) => {
+      maxsimaStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList2.databsTarget}">
       <div class="img-container">
           <div class="img-inner">
               <div class="inner-skew">
                   <img
-                      src="${kesilen5.imgSrc}"> alt="${kesilen5.imgAlt}"
+                      src="${MaxsimaModalsList2.imgSrc}"> alt="${MaxsimaModalsList2.imgAlt}"
               </div>
           </div>
       </div>
       <div class="text-container">
-          <h3>${kesilen5.name}</h3>
+          <h3>${MaxsimaModalsList2.name}</h3>
           <div>
-              ${kesilen2.description}
+              ${MaxsimaModalsList2.description}
           </div>kesilen5
       </div>
       `;
     });
   } else if (count === 2) {
-    kesilen6.map((kesilen6) => {
-      productDiv1.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen6.databsTarget}">
+    MaxsimaModalsList3.map((MaxsimaModalsList3) => {
+      maxsimaStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList3.databsTarget}">
       <div class="img-container">
           <div class="img-inner">
               <div class="inner-skew">
                   <img
-                      src="${kesilen6.imgSrc}"> alt="${kesilen6.imgAlt}"
+                      src="${MaxsimaModalsList3.imgSrc}"> alt="${MaxsimaModalsList3.imgAlt}"
               </div>
           </div>
       </div>
       <div class="text-container">
-          <h3>${kesilen6.name}</h3>
+          <h3>${MaxsimaModalsList3.name}</h3>
           <div>
-              ${kesilen6.description}
+              ${MaxsimaModalsList3.description}
           </div>
       </div>
       `;
     });
     count = 0;
-    btnShow1.style.display = "none";
-    btnHide1.style.display = "block";
+    maxsimaBtnGoster.style.display = "none";
+    maxsimaBtnGizle.style.display = "block";
   }
 };
 
-const btnGizle1 = () => {
-  productDiv1.innerHTML = "";
+const maxsimaStandBtnGizle = () => {
+  maxsimaStand.innerHTML = "";
 
-  kesilen4.map((kesilen4) => {
-    productDiv1.innerHTML += `
-    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${kesilen4.databsTarget}">
+  MaxsimaModalsList1.map((MaxsimaModalsList1) => {
+    maxsimaStand.innerHTML += `
+    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList1.databsTarget}">
     <div class="img-container">
         <div class="img-inner">
             <div class="inner-skew">
                 <img
-                    src="${kesilen4.imgSrc}"> alt="${kesilen4.imgAlt}"
+                    src="${MaxsimaModalsList1.imgSrc}"> alt="${MaxsimaModalsList1.imgAlt}"
             </div>
         </div>
     </div>
     <div class="text-container">
-        <h3>${kesilen4.name}</h3>
+        <h3>${MaxsimaModalsList1.name}</h3>
         <div>
-            ${kesilen4.description}
+            ${MaxsimaModalsList1.description}
         </div>
     </div>
     `;
   });
-  btnShow1.style.display = "block";
-  btnHide1.style.display = "none";
+  maxsimaBtnGoster.style.display = "block";
+  maxsimaBtnGizle.style.display = "none";
 };
