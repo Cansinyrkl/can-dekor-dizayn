@@ -39,8 +39,9 @@ function addListenerMulti(element, eventNames, listener) {
 }
 
 addListenerMulti(window, "scroll resize", function () {
+  const width = window.innerWidth;
   let scroll = window.scrollY;
-  if (scroll > 225) {
+  if (scroll > 225 && width > 1000) {
     navBarContainer.style.height = "115px";
     navBarContainer.style.transition = "0.4s";
     navBarContainer.style.borderBottomLeftRadius = "42%";
