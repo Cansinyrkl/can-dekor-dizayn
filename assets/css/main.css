@@ -245,7 +245,13 @@ Blockquote header .blockquote h1 {
   padding-left: 12px;
 }
 
+#width {
+  width: 100px;
+}
 
+#Anasayfa {
+  margin-top: 90px;
+}
 
 .a-box {
   display: inline-block;
