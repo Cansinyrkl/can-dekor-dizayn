@@ -15,7 +15,6 @@ body {
 
 /** Navbar CSS**/
 
-
 header {
   width: 100%;
   height: 100px;
@@ -71,6 +70,11 @@ header {
 }
 
 
+/* .topbar-icons {
+  position: absolute;
+  padding-left: 700px;
+
+} */
 
 
 #contact {
@@ -96,8 +100,6 @@ header {
   position: relative;
   max-width: 840px;
 }
-
-
 
 
 
