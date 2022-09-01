@@ -99,6 +99,8 @@ header {
 
 
 
+
+
 /* Location, Phone, Email Section */
 .contact-list {
   list-style-type: none;
@@ -309,6 +311,8 @@ Blockquote header .blockquote h1 {
   color: #2a424b;
   font-size: 18px;
 }
+
+
 
 #above {
   display: flex;

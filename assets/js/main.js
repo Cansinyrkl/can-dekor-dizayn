@@ -7,6 +7,7 @@ const woodBtnGoster = document.getElementById("woodBtnGoster");
 const woodBtnGizle = document.getElementById("woodBtnGizle");
 const maxsimaBtnGoster = document.getElementById("maxsimaBtnGoster");
 const maxsimaBtnGizle = document.getElementById("maxsimaBtnGizle");
+const Calısmalarımız = document.getElementById("Calısmalarımız")
 navBar = document.querySelector(".nav-bar");
 
 const menuList = document.getElementById("menuList");
@@ -658,6 +659,8 @@ const woodStandBtnGizle = () => {
   woodBtnGoster.style.display = "block";
   woodBtnGizle.style.display = "none";
 };
+
+
 
 
 MaxsimaModalsList1.map((MaxsimaModalsList1) => {
