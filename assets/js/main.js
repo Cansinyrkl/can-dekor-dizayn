@@ -7,7 +7,7 @@ const woodBtnGoster = document.getElementById("woodBtnGoster");
 const woodBtnGizle = document.getElementById("woodBtnGizle");
 const maxsimaBtnGoster = document.getElementById("maxsimaBtnGoster");
 const maxsimaBtnGizle = document.getElementById("maxsimaBtnGizle");
-const Calısmalarımız = document.getElementById("Calısmalarımız")
+const calismalarimiz = document.getElementById("calismalarimiz")
 navBar = document.querySelector(".nav-bar");
 
 const menuList = document.getElementById("menuList");
@@ -43,16 +43,14 @@ addListenerMulti(window, "scroll resize", function () {
   const width = window.innerWidth;
   let scroll = window.scrollY;
   if (scroll > 225 && width > 1000) {
-    navBarContainer.style.height = "115px";
+    navBarContainer.style.height = "100px";
     navBarContainer.style.transition = "0.4s";
-    navBarContainer.style.borderBottomLeftRadius = "42%";
-    navBarContainer.style.borderBottomRightRadius = "42%";
+
     above.style.visibility = "visible";
   } else {
-    navBarContainer.style.height = "90px";
+    navBarContainer.style.height = "100px";
     navBarContainer.style.transition = "0.6s";
-    navBarContainer.style.borderBottomLeftRadius = "0%";
-    navBarContainer.style.borderBottomRightRadius = "0%";
+
     above.style.visibility = "hidden";
   }
 });
@@ -551,11 +549,11 @@ const MaxsimaModals = [
 ];
 
 const WoodModalsList1 = WoodModals.slice(0, 4);
-const WoodModalsList2 = WoodModals.slice(5, 15);
-const WoodModalsList3 = WoodModals.slice(15);
+const WoodModalsList2 = WoodModals.slice(5, 17);
+const WoodModalsList3 = WoodModals.slice(17);
 const MaxsimaModalsList1 = MaxsimaModals.slice(0, 4);
-const MaxsimaModalsList2 = MaxsimaModals.slice(5, 15);
-const MaxsimaModalsList3 = MaxsimaModals.slice(15);
+const MaxsimaModalsList2 = MaxsimaModals.slice(5, 17);
+const MaxsimaModalsList3 = MaxsimaModals.slice(17);
 let count = 0;
 
 WoodModalsList1.map((WoodModalsList1) => {

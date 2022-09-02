@@ -37,13 +37,21 @@ header {
 
 .nav-bar ul {
   display: flex;
+
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+
 }
 
 .nav-bar ul li a {
   display: block;
   color: white;
-  font-size: 20px;
-  padding: 10px 15px;
+  font-size: 18px;
+  padding: 12px;
+  padding-top: 28px;
   border-radius: 50px;
   transition: 0.2s;
   margin: 0 5px;
@@ -51,9 +59,7 @@ header {
 }
 
 .nav-bar ul li a:hover {
-  background: rgb(29, 26, 26);
-  background: linear-gradient(0deg, rgba(29, 26, 26, 1) 0%, rgba(215, 26, 26, 1) 100%);
-  color: rgb(255, 187, 187);
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
@@ -69,13 +75,27 @@ header {
   margin-right: calc((100% - 1230px) / 2);
 }
 
+.nav-bar .topbar-social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-/* .topbar-icons {
-  position: absolute;
-  padding-left: 700px;
+.nav-bar .topbar-social-icons a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: opacity .3s;
+  font-size: 16px;
+}
 
-} */
+.nav-bar .topbar-social-icons a:hover {
+  opacity: 0.5;
+}
 
+.nav-bar .topbar-social-icons span:nth-child(2) {
+  margin-left: 24px;
+}
 
 #contact {
   width: 100%;
