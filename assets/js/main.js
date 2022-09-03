@@ -648,6 +648,7 @@ const woodStandBtnGizle = () => {
   });
   woodBtnGoster.style.display = "block";
   woodBtnGizle.style.display = "none";
+  location.href = "#calismalarimiz";
 };
 
 
@@ -746,4 +747,5 @@ const maxsimaStandBtnGizle = () => {
   });
   maxsimaBtnGoster.style.display = "block";
   maxsimaBtnGizle.style.display = "none";
+  location.href = "#calismalarimiz";
 };
