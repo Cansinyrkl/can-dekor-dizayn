@@ -638,3 +638,9 @@ Blockquote header .blockquote h1 {
     margin-bottom: 10px !important;
   }
 }
+
+@media only screen and (max-width: 375px) {
+  .hrclass {
+    margin: 40px !important;
+  }
+}
