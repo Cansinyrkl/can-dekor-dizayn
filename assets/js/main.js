@@ -44,18 +44,18 @@ addListenerMulti(window, "scroll resize", function () {
   let scroll = window.scrollY;
   if (scroll > 225 && width > 1000) {
     navBarContainer.style.height = "100px";
-    navBarContainer.style.transition = "0.4s";
-
     above.style.visibility = "visible";
+    navBarContainer.style = "opacity : 0.9;"
+
   } else {
     navBarContainer.style.height = "100px";
-    navBarContainer.style.transition = "0.6s";
     above.style.visibility = "hidden";
+    navBarContainer.style = "opacity : 1;"
 
   }
 });
 
-const PAhsapModals = () => {
+const onload = () => {
   const div = document.getElementById("modalDiv");
   for (let i = 1; i <= 26; i++) {
     axios.get(`productAhsapModals/productAhsapModals${i}.html`).then((res) => {
@@ -63,8 +63,7 @@ const PAhsapModals = () => {
       div.innerHTML += data;
     });
   }
-};
-const PMaxsimaModals = () => {
+
   const div1 = document.getElementById("modalDiv1");
   for (let i = 1; i <= 26; i++) {
     axios.get(`productMaxsimaModals/productMaxsimaModals${i}.html`).then((res) => {

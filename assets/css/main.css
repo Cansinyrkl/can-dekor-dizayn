@@ -95,7 +95,7 @@ header {
   color: rgb(255, 255, 255);
   opacity: 1;
   transition: opacity .3s;
-  font-size: 16px;
+  font-size: 18px;
   padding-right: 10px;
 
 }
@@ -598,7 +598,7 @@ Blockquote header .blockquote h1 {
 
 }
 
-@media only screen and (max-width: 1273px) {
+@media only screen and (max-width: 1358px) {
   .topbar-social-icons {
     display: none !important;
   }
