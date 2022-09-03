@@ -50,8 +50,8 @@ addListenerMulti(window, "scroll resize", function () {
   } else {
     navBarContainer.style.height = "100px";
     navBarContainer.style.transition = "0.6s";
-
     above.style.visibility = "hidden";
+
   }
 });
 

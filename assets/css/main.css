@@ -49,7 +49,7 @@ header {
 .nav-bar ul li a {
   display: block;
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   padding: 12px;
   padding-top: 28px;
   border-radius: 50px;
@@ -87,6 +87,17 @@ header {
   opacity: 1;
   transition: opacity .3s;
   font-size: 16px;
+  padding-right: 10px;
+}
+
+.nav-bar .topbar-social-icons span {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  opacity: 1;
+  transition: opacity .3s;
+  font-size: 16px;
+  padding-right: 10px;
+
 }
 
 .nav-bar .topbar-social-icons a:hover {
@@ -275,7 +286,7 @@ Blockquote header .blockquote h1 {
 }
 
 #Anasayfa {
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .a-box {
@@ -386,9 +397,10 @@ Blockquote header .blockquote h1 {
   }
 
   .social-media-list li {
-    height: 60px;
-    width: 60px;
-    line-height: 60px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
   }
 
   .social-media-list li:after {
@@ -429,10 +441,11 @@ Blockquote header .blockquote h1 {
   }
 
   .social-media-list li {
-    height: 55px;
-    width: 55px;
-    line-height: 55px;
-    font-size: 2rem;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+
   }
 
   .social-media-list li:after {
@@ -447,6 +460,8 @@ Blockquote header .blockquote h1 {
   .send-button {
     width: 99%;
   }
+
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -477,7 +492,7 @@ Blockquote header .blockquote h1 {
 
   .nav-bar.active {
     margin-top: px;
-    height: 350px;
+    height: 425px;
   }
 
   .nav-bar ul {
@@ -497,6 +512,12 @@ Blockquote header .blockquote h1 {
   .nav-bar ul li a {
     margin-bottom: 12px;
   }
+
+  .topbar-social-icons {
+    display: none !important;
+  }
+
+
 }
 
 
@@ -531,6 +552,7 @@ Blockquote header .blockquote h1 {
   }
 
 
+
 }
 
 @media only screen and (max-width: 575px) {
@@ -539,7 +561,7 @@ Blockquote header .blockquote h1 {
   }
 
   .nav-bar.active {
-    height: 350px;
+    height: 425px;
     width: 100%;
   }
 }
@@ -554,8 +576,16 @@ Blockquote header .blockquote h1 {
   }
 
   .nav-bar.active {
-    height: 350px;
+    height: 425px;
     width: 100%;
+  }
+
+  #map {
+    width: 10%;
+  }
+
+  .hrclass {
+    margin: 10px 0;
   }
 
 }
@@ -563,6 +593,48 @@ Blockquote header .blockquote h1 {
 @media only screen and (max-width: 1199px) {
   #map {
     width: 100%;
+    height: 100%;
   }
 
+}
+
+@media only screen and (max-width: 1273px) {
+  .topbar-social-icons {
+    display: none !important;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  #productheader {
+    font-size: 40px !important;
+  }
+
+}
+
+@media only screen and (max-width: 280px) {
+  #productheader {
+    font-size: 24px !important;
+  }
+
+  #productwoodheader {
+    font-size: 18px !important;
+  }
+
+  .contact-list {
+    font-size: 8px
+  }
+
+
+  .social-media-list {
+    margin-left: 20px;
+  }
+
+  .hrclass {
+    margin: 40px !important;
+  }
+
+  #socialheader {
+    margin-bottom: 10px !important;
+  }
 }
