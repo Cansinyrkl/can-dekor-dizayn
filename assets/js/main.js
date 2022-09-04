@@ -51,6 +51,7 @@ addListenerMulti(window, "scroll resize", function () {
     navBarContainer.style.height = "100px";
     above.style.visibility = "hidden";
     navBarContainer.style = "opacity : 1;"
+    navBarContainer.style = "transition: .5s;"
 
   }
 });

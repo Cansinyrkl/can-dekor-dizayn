@@ -49,7 +49,7 @@ header {
 .nav-bar ul li a {
   display: block;
   color: white;
-  font-size: 24px;
+  font-size: 18px;
   padding: 12px;
   padding-top: 28px;
   border-radius: 50px;
@@ -491,7 +491,7 @@ Blockquote header .blockquote h1 {
   }
 
   .nav-bar.active {
-    margin-top: px;
+    margin-top: 17px;
     height: 425px;
   }
 
@@ -642,5 +642,15 @@ Blockquote header .blockquote h1 {
 @media only screen and (max-width: 375px) {
   .hrclass {
     margin: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .direct-contact-container {
+    padding-left: 45px;
+  }
+
+  #socialheader {
+    margin-bottom: 0px !important;
   }
 }
