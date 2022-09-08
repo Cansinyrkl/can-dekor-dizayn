@@ -66,7 +66,7 @@ const onload = () => {
   }
 
   const div1 = document.getElementById("modalDiv1");
-  for (let i = 1; i <= 20; i++) {
+  for (let i = 1; i <= 16; i++) {
     axios.get(`productMaxsimaModals/productMaxsimaModals${i}.html`).then((res) => {
       const data = res.data;
       div1.innerHTML += data;
@@ -419,7 +419,7 @@ const WoodModalsList1 = WoodModals.slice(0, 4);
 const WoodModalsList2 = WoodModals.slice(5, 17);
 const WoodModalsList3 = WoodModals.slice(17);
 const MaxsimaModalsList1 = MaxsimaModals.slice(0, 4);
-const MaxsimaModalsList2 = MaxsimaModals.slice(5, 17);
+const MaxsimaModalsList2 = MaxsimaModals.slice(5, 11);
 
 let count = 0;
 
@@ -521,7 +521,6 @@ const woodStandBtnGizle = () => {
 
 
 
-
 MaxsimaModalsList1.map((MaxsimaModalsList1) => {
   maxsimaStand.innerHTML += `
     <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList1.databsTarget}">
@@ -542,6 +541,54 @@ MaxsimaModalsList1.map((MaxsimaModalsList1) => {
     `;
 });
 
+
+const maxsimaStandBtnGoster = () => {
+  count++;
+  if (count === 1) {
+    MaxsimaModalsList2.map((MaxsimaModalsList2) => {
+      maxsimaStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList2.databsTarget}">
+      <div class="img-container">
+          <div class="img-inner">
+              <div class="inner-skew">
+                  <img
+                      src="${MaxsimaModalsList2.imgSrc}"> alt="${MaxsimaModalsList2.imgAlt}"
+              </div>
+          </div>
+      </div>
+      <div class="text-container">
+          <h3>${MaxsimaModalsList2.name}</h3>
+          <div>
+              ${MaxsimaModalsList2.description}
+          </div>
+      </div>
+      `;
+    });
+  } else if (count === 2) {
+    MaxsimaModalsList3.map((MaxsimaModalsList3) => {
+      maxsimaStand.innerHTML += `
+      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList3.databsTarget}">
+      <div class="img-container">
+          <div class="img-inner">
+              <div class="inner-skew">
+                  <img
+                      src="${MaxsimaModalsList3.imgSrc}"> alt="${MaxsimaModalsList3.imgAlt}"
+              </div>
+          </div>
+      </div>
+      <div class="text-container">
+          <h3>${MaxsimaModalsList3.name}</h3>
+          <div>
+              ${MaxsimaModalsList3.description}
+          </div>
+      </div>
+      `;
+    });
+    count = 0;
+    maxsimaBtnGoster.style.display = "none";
+    maxsimaBtnGizle.style.display = "block";
+  }
+};
 
 const maxsimaStandBtnGizle = () => {
   maxsimaStand.innerHTML = "";
