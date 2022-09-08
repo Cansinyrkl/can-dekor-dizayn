@@ -66,7 +66,7 @@ const onload = () => {
   }
 
   const div1 = document.getElementById("modalDiv1");
-  for (let i = 1; i <= 26; i++) {
+  for (let i = 1; i <= 20; i++) {
     axios.get(`productMaxsimaModals/productMaxsimaModals${i}.html`).then((res) => {
       const data = res.data;
       div1.innerHTML += data;
@@ -317,7 +317,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "abc",
     databsTarget: "#productMaxsimaModals1",
-    imgSrc: "./assets/img/product img1/ahşapS1.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima02.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -326,7 +326,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals2",
-    imgSrc: "./assets/img/product img1/ahşapS2.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima04.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -335,7 +335,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals3",
-    imgSrc: "./assets/img/product img1/ahşapS3.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima09.jpeg",
     imgAlt: "Resim",
     imgStyle: "",
   },
@@ -344,7 +344,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals4",
-    imgSrc: "./assets/img/product img1/ahşapS4.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima14.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -353,7 +353,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals5",
-    imgSrc: "./assets/img/product img1/ahşapS5.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima16.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -362,7 +362,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals6",
-    imgSrc: "./assets/img/product img1/ahşapS6.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima17.jpeg",
     imgAlt: "Resim",
     imgStyle: "",
   },
@@ -371,7 +371,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals7",
-    imgSrc: "./assets/img/product img1/ahşapS7.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima18.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -380,7 +380,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals8",
-    imgSrc: "./assets/img/product img1/ahşapS8.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima22.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -389,7 +389,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals9",
-    imgSrc: "./assets/img/product img1/ahşapS9.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima24.jpeg",
     imgAlt: "Resim",
     imgStyle: "",
   },
@@ -398,7 +398,7 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals10",
-    imgSrc: "./assets/img/product img1/ahşapS10.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima27.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
@@ -407,145 +407,12 @@ const MaxsimaModals = [
     name: "Delux Tahta",
     description: "açıklama",
     databsTarget: "#productMaxsimaModals11",
-    imgSrc: "./assets/img/product img1/ahşapS11.jpeg",
+    imgSrc: "./assets/img/product img1/maxsima29.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
-  {
-    id: 12,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals12",
-    imgSrc: "./assets/img/product img1/ahşapS12.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 13,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals13",
-    imgSrc: "./assets/img/product img1/ahşapS13.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 14,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals14",
-    imgSrc: "./assets/img/product img1/ahşapS14.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 15,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals15",
-    imgSrc: "./assets/img/product img1/ahşapS15.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 16,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals16",
-    imgSrc: "./assets/img/product img1/ahşapS16.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 17,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals17",
-    imgSrc: "./assets/img/product img1/ahşapS17.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 18,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals18",
-    imgSrc: "./assets/img/product img1/ahşapS18.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 19,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals19",
-    imgSrc: "./assets/img/product img1/ahşapS19.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 20,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals20",
-    imgSrc: "./assets/img/product img1/ahşapS20.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 21,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals21",
-    imgSrc: "./assets/img/product img1/ahşapS21.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 22,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals22",
-    imgSrc: "./assets/img/product img1/ahşapS22.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 23,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals23",
-    imgSrc: "./assets/img/product img1/ahşapS23.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 24,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals24",
-    imgSrc: "./assets/img/product img1/ahşapS24.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 25,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals25",
-    imgSrc: "./assets/img/product img1/ahşapS25.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 26,
-    name: "Delux Tahta",
-    description: "açıklama",
-    databsTarget: "#productMaxsimaModals26",
-    imgSrc: "./assets/img/product img1/ahşapS26.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
+
+
 ];
 
 const WoodModalsList1 = WoodModals.slice(0, 4);
@@ -553,7 +420,7 @@ const WoodModalsList2 = WoodModals.slice(5, 17);
 const WoodModalsList3 = WoodModals.slice(17);
 const MaxsimaModalsList1 = MaxsimaModals.slice(0, 4);
 const MaxsimaModalsList2 = MaxsimaModals.slice(5, 17);
-const MaxsimaModalsList3 = MaxsimaModals.slice(17);
+
 let count = 0;
 
 WoodModalsList1.map((WoodModalsList1) => {
@@ -675,54 +542,6 @@ MaxsimaModalsList1.map((MaxsimaModalsList1) => {
     `;
 });
 
-
-const maxsimaStandBtnGoster = () => {
-  count++;
-  if (count === 1) {
-    MaxsimaModalsList2.map((MaxsimaModalsList2) => {
-      maxsimaStand.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList2.databsTarget}">
-      <div class="img-container">
-          <div class="img-inner">
-              <div class="inner-skew">
-                  <img
-                      src="${MaxsimaModalsList2.imgSrc}"> alt="${MaxsimaModalsList2.imgAlt}"
-              </div>
-          </div>
-      </div>
-      <div class="text-container">
-          <h3>${MaxsimaModalsList2.name}</h3>
-          <div>
-              ${MaxsimaModalsList2.description}
-          </div>
-      </div>
-      `;
-    });
-  } else if (count === 2) {
-    MaxsimaModalsList3.map((MaxsimaModalsList3) => {
-      maxsimaStand.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList3.databsTarget}">
-      <div class="img-container">
-          <div class="img-inner">
-              <div class="inner-skew">
-                  <img
-                      src="${MaxsimaModalsList3.imgSrc}"> alt="${MaxsimaModalsList3.imgAlt}"
-              </div>
-          </div>
-      </div>
-      <div class="text-container">
-          <h3>${MaxsimaModalsList3.name}</h3>
-          <div>
-              ${MaxsimaModalsList3.description}
-          </div>
-      </div>
-      `;
-    });
-    count = 0;
-    maxsimaBtnGoster.style.display = "none";
-    maxsimaBtnGizle.style.display = "block";
-  }
-};
 
 const maxsimaStandBtnGizle = () => {
   maxsimaStand.innerHTML = "";
