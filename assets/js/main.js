@@ -543,10 +543,8 @@ MaxsimaModalsList1.map((MaxsimaModalsList1) => {
 
 
 const maxsimaStandBtnGoster = () => {
-  count++;
-  if (count === 1) {
-    MaxsimaModalsList2.map((MaxsimaModalsList2) => {
-      maxsimaStand.innerHTML += `
+  MaxsimaModalsList2.map((MaxsimaModalsList2) => {
+    maxsimaStand.innerHTML += `
       <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList2.databsTarget}">
       <div class="img-container">
           <div class="img-inner">
@@ -563,31 +561,9 @@ const maxsimaStandBtnGoster = () => {
           </div>
       </div>
       `;
-    });
-  } else if (count === 2) {
-    MaxsimaModalsList3.map((MaxsimaModalsList3) => {
-      maxsimaStand.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList3.databsTarget}">
-      <div class="img-container">
-          <div class="img-inner">
-              <div class="inner-skew">
-                  <img
-                      src="${MaxsimaModalsList3.imgSrc}"> alt="${MaxsimaModalsList3.imgAlt}"
-              </div>
-          </div>
-      </div>
-      <div class="text-container">
-          <h3>${MaxsimaModalsList3.name}</h3>
-          <div>
-              ${MaxsimaModalsList3.description}
-          </div>
-      </div>
-      `;
-    });
-    count = 0;
-    maxsimaBtnGoster.style.display = "none";
-    maxsimaBtnGizle.style.display = "block";
-  }
+  });
+  maxsimaBtnGoster.style.display = "none";
+  maxsimaBtnGizle.style.display = "block";
 };
 
 const maxsimaStandBtnGizle = () => {
