@@ -7,7 +7,7 @@ const woodBtnGoster = document.getElementById("woodBtnGoster");
 const woodBtnGizle = document.getElementById("woodBtnGizle");
 const maxsimaBtnGoster = document.getElementById("maxsimaBtnGoster");
 const maxsimaBtnGizle = document.getElementById("maxsimaBtnGizle");
-const calismalarimiz = document.getElementById("calismalarimiz")
+const calismalarimiz = document.getElementById("calismalarimiz");
 navBar = document.querySelector(".nav-bar");
 
 const menuList = document.getElementById("menuList");
@@ -18,19 +18,19 @@ const menuLinkContact = menuList.children[3];
 
 menuLinkTrials.onclick = () => {
   navBar.classList.toggle("active");
-}
+};
 menuLinkAboutUs.onclick = () => {
   navBar.classList.toggle("active");
-}
+};
 menuLinkReference.onclick = () => {
   navBar.classList.toggle("active");
-}
+};
 menuLinkContact.onclick = () => {
   navBar.classList.toggle("active");
-}
+};
 hamburger.onclick = function () {
   navBar.classList.toggle("active");
-}
+};
 
 function addListenerMulti(element, eventNames, listener) {
   var events = eventNames.split(" ");
@@ -45,32 +45,31 @@ addListenerMulti(window, "scroll resize", function () {
   if (scroll > 225 && width > 1000) {
     navBarContainer.style.height = "100px";
     above.style.visibility = "visible";
-    navBarContainer.style = "opacity : 0.9;"
-
+    navBarContainer.style = "opacity : 0.9;";
   } else {
     navBarContainer.style.height = "100px";
     above.style.visibility = "hidden";
-    navBarContainer.style = "opacity : 1;"
-    navBarContainer.style = "transition: .5s;"
-
+    navBarContainer.style = "opacity : 1;";
+    navBarContainer.style = "transition: .5s;";
   }
 });
 
 const onload = () => {
   const div = document.getElementById("modalDiv");
   for (let i = 1; i <= 26; i++) {
-    axios.get(`productAhsapModals/productAhsapModals${i}.html`).then((res) => {
-      const data = res.data;
-      div.innerHTML += data;
+    $.get(`productAhsapModals/productAhsapModals${i}.html`, function (data) {
+      $("body").append(data);
     });
   }
 
   const div1 = document.getElementById("modalDiv1");
-  for (let i = 1; i <= 16; i++) {
-    axios.get(`productMaxsimaModals/productMaxsimaModals${i}.html`).then((res) => {
-      const data = res.data;
-      div1.innerHTML += data;
-    });
+  for (let i = 1; i <= 10; i++) {
+    $.get(
+      `productMaxsimaModals/productMaxsimaModals${i}.html`,
+      function (data) {
+        $("body").append(data);
+      }
+    );
   }
 };
 
@@ -432,7 +431,6 @@ WoodModalsList1.map((WoodModalsList1) => {
     `;
 });
 
-
 const woodStandBtnGoster = () => {
   count++;
   if (count === 1) {
@@ -508,8 +506,6 @@ const woodStandBtnGizle = () => {
   location.href = "#calismalarimiz";
 };
 
-
-
 MaxsimaModalsList1.map((MaxsimaModalsList1) => {
   maxsimaStand.innerHTML += `
     <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList1.databsTarget}">
@@ -529,7 +525,6 @@ MaxsimaModalsList1.map((MaxsimaModalsList1) => {
     </div>
     `;
 });
-
 
 const maxsimaStandBtnGoster = () => {
   MaxsimaModalsList2.map((MaxsimaModalsList2) => {
