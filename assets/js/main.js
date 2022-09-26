@@ -77,7 +77,7 @@ const WoodModals = [
   {
     id: 1,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Mesa-Pol",
     databsTarget: "#productAhsapModals1",
     imgSrc: "./assets/img/product img/ahşapS1.jpeg",
     imgAlt: "aaa",
@@ -86,7 +86,7 @@ const WoodModals = [
   {
     id: 2,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "DP-TAT",
     databsTarget: "#productAhsapModals2",
     imgSrc: "./assets/img/product img/ahşapS2.jpeg",
     imgAlt: "aaa",
@@ -95,7 +95,7 @@ const WoodModals = [
   {
     id: 3,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "BENTELER",
     databsTarget: "#productAhsapModals3",
     imgSrc: "./assets/img/product img/ahşapS3.jpeg",
     imgAlt: "Resim",
@@ -104,7 +104,7 @@ const WoodModals = [
   {
     id: 4,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "NERON",
     databsTarget: "#productAhsapModals4",
     imgSrc: "./assets/img/product img/ahşapS4.jpeg",
     imgAlt: "aaa",
@@ -113,7 +113,7 @@ const WoodModals = [
   {
     id: 5,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "NERON",
     databsTarget: "#productAhsapModals5",
     imgSrc: "./assets/img/product img/ahşapS5.jpeg",
     imgAlt: "aaa",
@@ -122,7 +122,7 @@ const WoodModals = [
   {
     id: 6,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "NERON",
     databsTarget: "#productAhsapModals6",
     imgSrc: "./assets/img/product img/ahşapS6.jpeg",
     imgAlt: "Resim",
@@ -131,7 +131,7 @@ const WoodModals = [
   {
     id: 7,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "ACRAN-BOĞAZİÇİ",
     databsTarget: "#productAhsapModals7",
     imgSrc: "./assets/img/product img/ahşapS7.jpeg",
     imgAlt: "aaa",
@@ -140,7 +140,7 @@ const WoodModals = [
   {
     id: 8,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "NERON",
     databsTarget: "#productAhsapModals8",
     imgSrc: "./assets/img/product img/ahşapS8.jpeg",
     imgAlt: "aaa",
@@ -149,7 +149,7 @@ const WoodModals = [
   {
     id: 9,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Hülger-Seramik",
     databsTarget: "#productAhsapModals9",
     imgSrc: "./assets/img/product img/ahşapS9.jpeg",
     imgAlt: "Resim",
@@ -158,7 +158,7 @@ const WoodModals = [
   {
     id: 10,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Segasolar",
     databsTarget: "#productAhsapModals10",
     imgSrc: "./assets/img/product img/ahşapS10.jpeg",
     imgAlt: "aaa",
@@ -167,7 +167,7 @@ const WoodModals = [
   {
     id: 11,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Hulka-Çelik K.",
     databsTarget: "#productAhsapModals11",
     imgSrc: "./assets/img/product img/ahşapS11.jpeg",
     imgAlt: "aaa",
@@ -176,7 +176,7 @@ const WoodModals = [
   {
     id: 12,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "LIANSU",
     databsTarget: "#productAhsapModals12",
     imgSrc: "./assets/img/product img/ahşapS12.jpeg",
     imgAlt: "Resim",
@@ -185,7 +185,7 @@ const WoodModals = [
   {
     id: 13,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "KOREA-TOURISM",
     databsTarget: "#productAhsapModals13",
     imgSrc: "./assets/img/product img/ahşapS13.jpeg",
     imgAlt: "aaa",
@@ -194,7 +194,7 @@ const WoodModals = [
   {
     id: 14,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "UMG-Uysal-Medikal",
     databsTarget: "#productAhsapModals14",
     imgSrc: "./assets/img/product img/ahşapS14.jpeg",
     imgAlt: "aaa",
@@ -203,7 +203,7 @@ const WoodModals = [
   {
     id: 15,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Zırhsan",
     databsTarget: "#productAhsapModals15",
     imgSrc: "./assets/img/product img/ahşapS15.jpeg",
     imgAlt: "Resim",
@@ -212,7 +212,7 @@ const WoodModals = [
   {
     id: 16,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "ENDOV",
     databsTarget: "#productAhsapModals16",
     imgSrc: "./assets/img/product img/ahşapS16.jpeg",
     imgAlt: "aaa",
@@ -221,7 +221,7 @@ const WoodModals = [
   {
     id: 17,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Salvagnini-Simted",
     databsTarget: "#productAhsapModals17",
     imgSrc: "./assets/img/product img/ahşapS17.jpeg",
     imgAlt: "aaa",
@@ -230,7 +230,7 @@ const WoodModals = [
   {
     id: 18,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "HASÇELİK",
     databsTarget: "#productAhsapModals18",
     imgSrc: "./assets/img/product img/ahşapS18.jpeg",
     imgAlt: "Resim",
@@ -239,7 +239,7 @@ const WoodModals = [
   {
     id: 19,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "HAIMER",
     databsTarget: "#productAhsapModals19",
     imgSrc: "./assets/img/product img/ahşapS19.jpeg",
     imgAlt: "aaa",
@@ -248,7 +248,7 @@ const WoodModals = [
   {
     id: 20,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Eyüp-Sultan",
     databsTarget: "#productAhsapModals20",
     imgSrc: "./assets/img/product img/ahşapS20.jpeg",
     imgAlt: "Resim",
@@ -257,7 +257,7 @@ const WoodModals = [
   {
     id: 21,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Tecno-tel",
     databsTarget: "#productAhsapModals21",
     imgSrc: "./assets/img/product img/ahşapS21.jpeg",
     imgAlt: "aaa",
@@ -266,7 +266,7 @@ const WoodModals = [
   {
     id: 22,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Lokman",
     databsTarget: "#productAhsapModals22",
     imgSrc: "./assets/img/product img/ahşapS22.jpeg",
     imgAlt: "aaa",
@@ -275,7 +275,7 @@ const WoodModals = [
   {
     id: 23,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Utaş",
     databsTarget: "#productAhsapModals23",
     imgSrc: "./assets/img/product img/ahşapS23.jpeg",
     imgAlt: "Resim",
@@ -284,7 +284,7 @@ const WoodModals = [
   {
     id: 24,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Altech",
     databsTarget: "#productAhsapModals24",
     imgSrc: "./assets/img/product img/ahşapS24.jpeg",
     imgAlt: "aaa",
@@ -293,7 +293,7 @@ const WoodModals = [
   {
     id: 25,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "Kristal-Cola",
     databsTarget: "#productAhsapModals25",
     imgSrc: "./assets/img/product img/ahşapS25.jpeg",
     imgAlt: "aaa",
@@ -302,7 +302,7 @@ const WoodModals = [
   {
     id: 26,
     name: "Özel Ahşap Standlarımız",
-    description: "Açıklama",
+    description: "MORETTO",
     databsTarget: "#productAhsapModals26",
     imgSrc: "./assets/img/product img/ahşapS26.jpeg",
     imgAlt: "Resim",
@@ -314,7 +314,7 @@ const MaxsimaModals = [
   {
     id: 1,
     name: "Maxsima Standlarımız",
-    description: "Açıklama",
+    description: "TOPÇU-dental",
     databsTarget: "#productMaxsimaModals1",
     imgSrc: "./assets/img/product img1/maxsima02.jpeg",
     imgAlt: "Resim",
@@ -323,7 +323,7 @@ const MaxsimaModals = [
   {
     id: 2,
     name: "Maxsima Standlarımız",
-    description: "Açıklama",
+    description: "dm-DİŞMAT",
     databsTarget: "#productMaxsimaModals2",
     imgSrc: "./assets/img/product img1/maxsima04.jpeg",
     imgAlt: "Resim",
@@ -332,7 +332,7 @@ const MaxsimaModals = [
   {
     id: 3,
     name: "Maxsima Standlarımız",
-    description: "Açıklama",
+    description: "NEMCA-SHOES",
     databsTarget: "#productMaxsimaModals3",
     imgSrc: "./assets/img/product img1/maxsima09.jpeg",
     imgAlt: "Resim",
@@ -341,66 +341,13 @@ const MaxsimaModals = [
   {
     id: 4,
     name: "Maxsima Standlarımız",
-    description: "Açıklama",
+    description: "ÖZGÜN-Die-Mold",
     databsTarget: "#productMaxsimaModals4",
     imgSrc: "./assets/img/product img1/maxsima14.jpeg",
     imgAlt: "aaa",
     imgStyle: "",
   },
-  {
-    id: 5,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals5",
-    imgSrc: "./assets/img/product img1/maxsima17.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 6,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals6",
-    imgSrc: "./assets/img/product img1/maxsima18.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 7,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals7",
-    imgSrc: "./assets/img/product img1/maxsima21.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 8,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals8",
-    imgSrc: "./assets/img/product img1/maxsima23.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
-  {
-    id: 9,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals9",
-    imgSrc: "./assets/img/product img1/maxsima27.jpeg",
-    imgAlt: "Resim",
-    imgStyle: "",
-  },
-  {
-    id: 10,
-    name: "Maxsima Standlarımız",
-    description: "Açıklama",
-    databsTarget: "#productMaxsimaModals10",
-    imgSrc: "./assets/img/product img1/maxsima30.jpeg",
-    imgAlt: "aaa",
-    imgStyle: "",
-  },
+ 
 ];
 
 const WoodModalsList1 = WoodModals.slice(0, 4);

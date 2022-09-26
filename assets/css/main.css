@@ -520,6 +520,14 @@ Blockquote header .blockquote h1 {
 
 }
 
+#woodBtnGoster {
+  margin-bottom: 40px;
+}
+
+#woodBtnGizle {
+  margin-bottom: 40px;
+}
+
 
 @media only screen and (max-width: 1320px) {
   header {
