@@ -199,12 +199,13 @@ header {
   border-radius: 50%;
   color: #fff;
   background-color: rgb(27, 27, 27);
-  cursor: pointer;
+  /* cursor: pointer; */
+  cursor: default;
   transition: all .3s ease-in-out;
 }
 
 
-.social-media-list li:hover {
+/* .social-media-list li:hover {
   background-color: #fff;
 }
 
@@ -216,7 +217,7 @@ header {
 
 .social-media-list li:hover a {
   color: #000;
-}
+} */
 
 
 
@@ -660,5 +661,11 @@ Blockquote header .blockquote h1 {
 
   #socialheader {
     margin-bottom: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hrclass {
+    margin: 50px !important;
   }
 }
