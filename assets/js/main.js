@@ -347,7 +347,6 @@ const MaxsimaModals = [
     imgAlt: "aaa",
     imgStyle: "",
   },
- 
 ];
 
 const WoodModalsList1 = WoodModals.slice(0, 4);
@@ -472,54 +471,3 @@ MaxsimaModalsList1.map((MaxsimaModalsList1) => {
     </div>
     `;
 });
-
-const maxsimaStandBtnGoster = () => {
-  MaxsimaModalsList2.map((MaxsimaModalsList2) => {
-    maxsimaStand.innerHTML += `
-      <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList2.databsTarget}">
-      <div class="img-container">
-          <div class="img-inner">
-              <div class="inner-skew">
-                  <img
-                      src="${MaxsimaModalsList2.imgSrc}"> alt="${MaxsimaModalsList2.imgAlt}"
-              </div>
-          </div>
-      </div>
-      <div class="text-container">
-          <h3>${MaxsimaModalsList2.name}</h3>
-          <div>
-              ${MaxsimaModalsList2.description}
-          </div>
-      </div>
-      `;
-  });
-  maxsimaBtnGoster.style.display = "none";
-  maxsimaBtnGizle.style.display = "block";
-};
-
-const maxsimaStandBtnGizle = () => {
-  maxsimaStand.innerHTML = "";
-
-  MaxsimaModalsList1.map((MaxsimaModalsList1) => {
-    maxsimaStand.innerHTML += `
-    <div class="a-box" data-bs-toggle="modal"  data-bs-target="${MaxsimaModalsList1.databsTarget}">
-    <div class="img-container">
-        <div class="img-inner">
-            <div class="inner-skew">
-                <img
-                    src="${MaxsimaModalsList1.imgSrc}"> alt="${MaxsimaModalsList1.imgAlt}"
-            </div>
-        </div>
-    </div>
-    <div class="text-container">
-        <h3>${MaxsimaModalsList1.name}</h3>
-        <div>
-            ${MaxsimaModalsList1.description}
-        </div>
-    </div>
-    `;
-  });
-  maxsimaBtnGoster.style.display = "block";
-  maxsimaBtnGizle.style.display = "none";
-  location.href = "#calismalarimiz";
-};
